@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e1fe7745-aaf7-47e2-955b-8388cc84bcec" name="更改" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="G:\JAVA\apache-maven-3.8.7-bin\maven\repository" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../apache-maven-3.8.7-bin/apache-maven-3.8.7" />
+        <option name="useMavenConfig" value="false" />
+        <option name="userSettingsFile" value="G:\JAVA\apache-maven-3.8.7-bin\apache-maven-3.8.7\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2YKqmjdMaUWFCq4CLRNFqtXEFGT" />
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;database.data.extractors.current.export.id&quot;: &quot;SQL 插入&quot;,
+    &quot;last_opened_file_path&quot;: &quot;G:/JAVA/Competition/Evergreen-recruitment&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;redis&quot;,
+      &quot;mysql&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="practice" />
+      <recent name="study" />
+    </key>
+  </component>
+  <component name="RunManager" selected="应用程序.L122_买卖股票的最佳时机二">
+    <configuration name="两数之和" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Tencent.两数之和" />
+      <module name="Data_structures_and_algorithms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tencent.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="L122_买卖股票的最佳时机二" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="practice.L122_买卖股票的最佳时机二" />
+      <module name="Data_structures_and_algorithms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="practice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="L2548_填满背包的最大价格" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="practice.L2548_填满背包的最大价格" />
+      <module name="Data_structures_and_algorithms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="practice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PREV_282" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="study.PREV_282" />
+      <module name="Data_structures_and_algorithms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="study.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test" />
+      <module name="Data_structures_and_algorithms" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="应用程序.L122_买卖股票的最佳时机二" />
+        <item itemvalue="应用程序.L2548_填满背包的最大价格" />
+        <item itemvalue="应用程序.两数之和" />
+        <item itemvalue="应用程序.test" />
+        <item itemvalue="应用程序.PREV_282" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="e1fe7745-aaf7-47e2-955b-8388cc84bcec" name="更改" comment="" />
+      <created>1700284780794</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1700284780794</updated>
+      <workItem from="1700284781822" duration="4681000" />
+      <workItem from="1700371847525" duration="7000" />
+      <workItem from="1700637674772" duration="866000" />
+      <workItem from="1700645143353" duration="603000" />
+      <workItem from="1700730486912" duration="8394000" />
+      <workItem from="1700796188258" duration="6200000" />
+      <workItem from="1700883690629" duration="6295000" />
+      <workItem from="1700969375204" duration="4512000" />
+      <workItem from="1700998349333" duration="3216000" />
+      <workItem from="1701093472650" duration="139000" />
+      <workItem from="1701093622111" duration="4148000" />
+      <workItem from="1701136132739" duration="7781000" />
+      <workItem from="1701244405432" duration="4517000" />
+      <workItem from="1701259936261" duration="11000" />
+      <workItem from="1701260888024" duration="646000" />
+      <workItem from="1701333034725" duration="12000" />
+      <workItem from="1702008226223" duration="79000" />
+      <workItem from="1702008318827" duration="7240000" />
+      <workItem from="1702033741801" duration="12000" />
+      <workItem from="1702101931204" duration="9994000" />
+      <workItem from="1702179297273" duration="7982000" />
+      <workItem from="1702541132537" duration="8172000" />
+      <workItem from="1702619875061" duration="9274000" />
+      <workItem from="1702635198248" duration="6539000" />
+      <workItem from="1702648901034" duration="6000" />
+      <workItem from="1702825031797" duration="1175000" />
+      <workItem from="1702875773942" duration="3000" />
+      <workItem from="1707207088314" duration="7943000" />
+      <workItem from="1707284947357" duration="7641000" />
+      <workItem from="1707314245471" duration="8000" />
+      <workItem from="1707486661468" duration="2798000" />
+      <workItem from="1707559158072" duration="1915000" />
+      <workItem from="1707716522277" duration="221000" />
+      <workItem from="1707716903970" duration="1476000" />
+      <workItem from="1708065434872" duration="6032000" />
+      <workItem from="1708320771857" duration="2124000" />
+      <workItem from="1708406083299" duration="16000" />
+      <workItem from="1708825232405" duration="4901000" />
+      <workItem from="1709013971235" duration="4000" />
+      <workItem from="1709014713932" duration="7000" />
+      <workItem from="1709106144831" duration="4524000" />
+      <workItem from="1709221265832" duration="1596000" />
+      <workItem from="1709277081126" duration="11000" />
+      <workItem from="1709278618490" duration="823000" />
+      <workItem from="1709291902423" duration="4000" />
+      <workItem from="1709293103268" duration="149000" />
+      <workItem from="1709293262375" duration="5147000" />
+      <workItem from="1709355676326" duration="21000" />
+      <workItem from="1709443295886" duration="390000" />
+      <workItem from="1709444096202" duration="2108000" />
+      <workItem from="1709468836354" duration="6000" />
+      <workItem from="1709539110406" duration="4868000" />
+      <workItem from="1709604253546" duration="6350000" />
+      <workItem from="1709626712829" duration="916000" />
+      <workItem from="1709704821231" duration="1915000" />
+      <workItem from="1709716297860" duration="12000" />
+      <workItem from="1709739264399" duration="2000" />
+      <workItem from="1709983356321" duration="1564000" />
+      <workItem from="1710222940522" duration="1218000" />
+      <workItem from="1710253588829" duration="7000" />
+      <workItem from="1710826252329" duration="5194000" />
+      <workItem from="1710848825497" duration="1611000" />
+      <workItem from="1711091004543" duration="64000" />
+      <workItem from="1711091082808" duration="1950000" />
+      <workItem from="1711115263930" duration="3021000" />
+      <workItem from="1711164120761" duration="655000" />
+      <workItem from="1711259239745" duration="4439000" />
+      <workItem from="1711266383653" duration="23000" />
+      <workItem from="1711717694964" duration="1717000" />
+      <workItem from="1711764696039" duration="24000" />
+      <workItem from="1711983204311" duration="688000" />
+      <workItem from="1712024026296" duration="6491000" />
+      <workItem from="1712037779232" duration="23000" />
+      <workItem from="1712058173700" duration="1332000" />
+      <workItem from="1712069083926" duration="3019000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/practice/L88_合并两个有序数组.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/practice/L1_两数之和.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/practice/L1_两数之和.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/practice/L643_子数组最大平均数I.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/practice/L643_子数组最大平均数I.java</url>
+          <line>68</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/study/P43_链表递归.java</url>
+          <line>71</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/study/P43_链表递归.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/study/P43_链表递归.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/study/P43_链表递归.java</url>
+          <line>114</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/study/P42_链表练习.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/study/P50_递归插入排序.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/study/P52_斐波那契数列.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/study/P57_杨辉三角_记忆法.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/study/P57_杨辉三角_记忆法.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/study/P57_杨辉三角_记忆法.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/study/test1.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/study/test1.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/study/test1.java</url>
+          <line>74</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/study/test1.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/study/test1.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/study/PREV_282.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/study/PREV_282.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/practice/L122_买卖股票的最佳时机二.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/practice/L122_买卖股票的最佳时机二.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
