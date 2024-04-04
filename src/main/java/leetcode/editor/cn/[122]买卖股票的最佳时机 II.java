@@ -47,7 +47,8 @@ import practice.L495_提莫攻击;
 // leetcode submit region begin(Prohibit modification and deletion)
 class Solution
 {
-    public int maxProfit(int[] prices)
+    // 第一次没解出来
+    public int maxProfit0(int[] prices)
     {
         int min = Integer.MAX_VALUE;
         int max = 0;
@@ -64,24 +65,65 @@ class Solution
                 if (temp > max)
                 {
                     max = temp;
+                    if (i < prices.length - 2 && max > prices[i + 1] - min)
+                    {
+                        sum += max;
+                        min = prices[i];
+                        max = 0;
+                    }
                 }
-                else
-                {
-                    sum += max;
-                    min = prices[i];
-                    max = 0;
-                }
-            }
-
-            if (i == prices.length - 1 && max > 0)
-            {
-                sum += max;
             }
 
         }
         sum += max;
         return sum;
+    }
+
+
+    // 解法一：动态规划  -  二维数组
+    public int maxProfit(int[] prices)
+    {
+        int n = prices.length;
+        int[][] dp = new int[n][2];
+        dp[0][0] = 0;
+        dp[0][1] = -prices[0];
+        for (int i = 1; i < prices.length; i++)
+        {
+            // 寻找 第 i 天的最大利润
+            dp[i][0] = Math.max(dp[i - 1][0], dp[i - 1][1] + prices[i]);
+            dp[i][1] = Math.max(dp[i - 1][1], dp[i - 1][0] - prices[i]);
+        }
+        return dp[n - 1][0];
+    }
+
+
+    // 解法二：计算上升天数
+    public int maxProfit2(int[] prices)
+    {
+        int sum = 0;
+
+        for (int i = 0; i < prices.length - 1; i++)
+        {
+            int p1 = prices[i];
+            int p2 = prices[i + 1];
+            if (p1 < p2)
+            {
+                sum += p2 - p1;
+            }
+        }
+        return sum;
 
     }
+
+    // 解法三：贪心
+    public int maxProfit(int[] prices) {
+        int ans = 0;
+        int n = prices.length;
+        for (int i = 1; i < n; ++i) {
+            ans += Math.max(0, prices[i] - prices[i - 1]);
+        }
+        return ans;
+    }
+
 }
 // leetcode submit region end(Prohibit modification and deletion)
