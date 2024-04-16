@@ -4,18 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1fe7745-aaf7-47e2-955b-8388cc84bcec" name="更改" comment="动态规划 解题">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ademo/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ademo/demo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/demo/demo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/demo/demo3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/demo/pw.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/exam/meituan_jishu5_2024_4_6/editDistance.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/exam/meituan_jishu5_2024_4_6/exam1.java" afterDir="false" />
+    <list default="true" id="e1fe7745-aaf7-47e2-955b-8388cc84bcec" name="更改" comment="阿里数字国际">
+      <change afterPath="$PROJECT_DIR$/src/main/exam/exam/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/demo/test1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/interview/paiang_2024_3_28.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/leetcode/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/leetcode/editor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/leetcode/statistics.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/leetcode/statistics.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/[198]打家劫舍.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/[198]打家劫舍.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/demo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/test.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,44 +53,51 @@
     <option name="autoscrollToSource" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;database.data.extractors.current.export.id&quot;: &quot;SQL 插入&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;G:/JAVA/Competition/Evergreen-recruitment&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "database.data.extractors.current.export.id": "SQL 插入",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "G:/JAVA/Competition/Evergreen-recruitment",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;redis&quot;,
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "redis",
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="practice" />
       <recent name="study" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.ademo.demo">
+  <component name="RunManager" selected="应用程序.exam.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="demo.Main" />
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Data_structures_and_algorithms" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="exam.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exam.Main" />
       <module name="Data_structures_and_algorithms" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="demo.*" />
+          <option name="PATTERN" value="exam.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -98,12 +105,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ademo.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ademo.Main" />
+    <configuration name="paiang_2024_3_28" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="interview.paiang_2024_3_28" />
       <module name="Data_structures_and_algorithms" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ademo.*" />
+          <option name="PATTERN" value="interview.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -111,34 +118,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ademo.demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ademo.demo" />
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test" />
       <module name="Data_structures_and_algorithms" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ademo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="demo.demo" />
-      <module name="Data_structures_and_algorithms" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="pw" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="demo.pw" />
+    <configuration name="test1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="demo.test1" />
       <module name="Data_structures_and_algorithms" />
       <extension name="coverage">
         <pattern>
@@ -152,11 +140,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.ademo.demo" />
-        <item itemvalue="应用程序.ademo.Main" />
-        <item itemvalue="应用程序.demo" />
-        <item itemvalue="应用程序.pw" />
+        <item itemvalue="应用程序.exam.Main" />
+        <item itemvalue="应用程序.test1" />
         <item itemvalue="应用程序.Main" />
+        <item itemvalue="应用程序.test" />
+        <item itemvalue="应用程序.paiang_2024_3_28" />
       </list>
     </recent_temporary>
   </component>
@@ -253,7 +241,17 @@
       <workItem from="1712412534735" duration="25000" />
       <workItem from="1712412577045" duration="2221000" />
       <workItem from="1712453931746" duration="8321000" />
-      <workItem from="1712572279667" duration="4383000" />
+      <workItem from="1712572279667" duration="5357000" />
+      <workItem from="1712587453699" duration="2032000" />
+      <workItem from="1712629567737" duration="12000" />
+      <workItem from="1712669921042" duration="2460000" />
+      <workItem from="1712675289412" duration="10000" />
+      <workItem from="1712760090638" duration="2620000" />
+      <workItem from="1712803219971" duration="594000" />
+      <workItem from="1712805530786" duration="398000" />
+      <workItem from="1712814542383" duration="2706000" />
+      <workItem from="1712826627492" duration="1095000" />
+      <workItem from="1712969587710" duration="179000" />
     </task>
     <task id="LOCAL-00001" summary="动态规划 解题">
       <option name="closed" value="true" />
@@ -271,7 +269,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712247369326</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="阿里数字国际">
+      <option name="closed" value="true" />
+      <created>1712581520640</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1712581520640</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -280,7 +286,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="动态规划 解题" />
-    <option name="LAST_COMMIT_MESSAGE" value="动态规划 解题" />
+    <MESSAGE value="阿里数字国际" />
+    <option name="LAST_COMMIT_MESSAGE" value="阿里数字国际" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -402,14 +409,24 @@
           <option name="timeStamp" value="48" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ademo/Main.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/exam/ali_shuziguoji_2024_4_8/Main.java</url>
           <line>19</line>
           <option name="timeStamp" value="55" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ademo/Main.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/exam/ali_shuziguoji_2024_4_8/Main.java</url>
           <line>21</line>
           <option name="timeStamp" value="56" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/interview/paiang_2024_3_28.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/interview/paiang_2024_3_28.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="65" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
