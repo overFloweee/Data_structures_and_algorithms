@@ -13,7 +13,7 @@ public class L13_罗马数字转整数
 
     public int romanToInt1(String s)
     {
-        Map<Character, Integer> map = new HashMap<>()
+        Map<Character, Integer> map = new HashMap<Character, Integer>()
         {{
             put('I', 1);
             put('V', 5);
