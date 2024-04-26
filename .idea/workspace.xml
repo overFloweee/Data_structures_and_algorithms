@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e1fe7745-aaf7-47e2-955b-8388cc84bcec" name="更改" comment="刷题">
-      <change afterPath="$PROJECT_DIR$/src/main/java/demo/Printtokens2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/practice/L13_罗马数字转整数.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/practice/L13_罗马数字转整数.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -256,6 +254,9 @@
       <workItem from="1713580240059" duration="444000" />
       <workItem from="1713703520566" duration="150000" />
       <workItem from="1713765162499" duration="853000" />
+      <workItem from="1713798462512" duration="139000" />
+      <workItem from="1713878827598" duration="57000" />
+      <workItem from="1713967365048" duration="5000" />
     </task>
     <task id="LOCAL-00001" summary="动态规划 解题">
       <option name="closed" value="true" />
@@ -305,7 +306,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713703544299</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="刷题">
+      <option name="closed" value="true" />
+      <created>1713798489662</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1713798489663</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
