@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="@47.113.185.207">
-  <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.49">
+  <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.52">
     <root id="1">
       <DefaultCasing>lower/lower</DefaultCasing>
       <DefaultEngine>InnoDB</DefaultEngine>
@@ -1007,8 +1007,7 @@ wordpress|schema||wordpress|localhost|UPDATE|G</Grants>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
     <schema id="292" parent="1" name="wordpress">
-      <IntrospectionTimestamp>2024-03-12.22:03:16</IntrospectionTimestamp>
-      <LocalIntrospectionTimestamp>2024-03-12.06:03:14</LocalIntrospectionTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-03-12.06:03:14</LastIntrospectionLocalTimestamp>
       <CollationName>utf8mb4_general_ci</CollationName>
     </schema>
     <user id="293" parent="1" name="root"/>

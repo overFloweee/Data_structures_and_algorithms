@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="@localhost">
-  <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.49">
+  <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.52">
     <root id="1">
       <DefaultCasing>lower/lower</DefaultCasing>
       <DefaultEngine>InnoDB</DefaultEngine>
@@ -940,8 +940,7 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <CollationName>utf8_general_ci</CollationName>
     </schema>
     <schema id="283" parent="1" name="reggie">
-      <IntrospectionTimestamp>2024-03-20.03:48:59</IntrospectionTimestamp>
-      <LocalIntrospectionTimestamp>2024-03-19.11:48:59</LocalIntrospectionTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-03-19.11:48:59</LastIntrospectionLocalTimestamp>
       <CollationName>utf8_general_ci</CollationName>
     </schema>
     <schema id="284" parent="1" name="qf-dianping">
@@ -954,8 +953,7 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <CollationName>utf8_general_ci</CollationName>
     </schema>
     <schema id="287" parent="1" name="shuangxing">
-      <IntrospectionTimestamp>2024-03-23.19:22:20</IntrospectionTimestamp>
-      <LocalIntrospectionTimestamp>2024-03-23.03:22:20</LocalIntrospectionTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-03-23.03:22:20</LastIntrospectionLocalTimestamp>
       <CollationName>utf8_general_ci</CollationName>
     </schema>
     <schema id="288" parent="1" name="hmall">
