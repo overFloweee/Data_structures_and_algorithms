@@ -31,29 +31,24 @@
 // Related Topics 数组 排序 👍 2301 👎 0
 
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 
 // leetcode submit region begin(Prohibit modification and deletion)
-class Solution
-{
-    public int[][] merge(int[][] intervals)
-    {
+class Solution {
+    public int[][] merge1(int[][] intervals) {
         int n = intervals.length;
-        if (n == 1)
-        {
+        if (n == 1) {
             return intervals;
         }
 
         // 排序
-        Arrays.sort(intervals, new Comparator<int[]>()
-        {
+        Arrays.sort(intervals, new Comparator<int[]>() {
             @Override
-            public int compare(int[] o1, int[] o2)
-            {
+            public int compare(int[] o1, int[] o2) {
                 int i = o1[0] - o2[0];
-                if (i == 0)
-                {
+                if (i == 0) {
                     i = o1[1] - o2[1];
                 }
                 return i;
@@ -62,24 +57,22 @@ class Solution
 
 
         int size = 0;
-        for (int i = 1; i < n; i++)
-        {
-            if (intervals[i - 1][1] >= intervals[i][1])
-            {
+        for (int i = 1; i < n; i++) {
+            // 后一个集合 的首元素 > 后一个集合的 尾元素，需要合并
+            if (intervals[i - 1][1] >= intervals[i][1]) {
                 intervals[i] = new int[]{intervals[i - 1][0], intervals[i - 1][1]};
                 size++;
             }
-            // 后一个集合 的首元素 > 后一个集合的 尾元素，需要合并
-            else if (intervals[i - 1][1] >= intervals[i][0])
-            {
+            // 后一个集合 的首元素 > 后一个集合的 首元素，需要合并
+            else if (intervals[i - 1][1] >= intervals[i][0]) {
                 intervals[i] = new int[]{intervals[i - 1][0], intervals[i][1]};
                 size++;
             }
 
         }
 
-        for (int[] interval : intervals)
-        {
+
+        for (int[] interval : intervals) {
             System.out.print(Arrays.toString(interval) + " ");
         }
         System.out.println("size: " + size);
@@ -90,5 +83,46 @@ class Solution
 
         return res;
     }
+
+
+    public int[][] merge(int[][] intervals) {
+        int n = intervals.length;
+        if (n == 1) {
+            return intervals;
+        }
+
+        // 排序
+        Arrays.sort(intervals, new Comparator<int[]>() {
+            @Override
+            public int compare(int[] o1, int[] o2) {
+                int i = o1[0] - o2[0];
+                if (i == 0) {
+                    i = o1[1] - o2[1];
+                }
+                return i;
+            }
+        });
+
+        ArrayList<int[]> merge = new ArrayList<>();
+        merge.add(intervals[0]);
+        for (int i = 1; i < n; i++) {
+            int l = intervals[i][0];
+            int r = intervals[i][1];
+            // merge集合中当前元素
+            int[] cur = merge.get(merge.size() - 1);
+            // 集合中尾元素  <  下一个元素的首元素
+            if (cur[1] <l){
+                merge.add(new int[]{l, r});
+            }
+            else{  // 需要合并的情况
+                cur[1] = Integer.max(cur[1], r);
+            }
+
+        }
+
+
+        return merge.toArray(new int[merge.size()][]);
+    }
+
 }
 // leetcode submit region end(Prohibit modification and deletion)
