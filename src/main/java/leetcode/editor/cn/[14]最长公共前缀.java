@@ -31,7 +31,6 @@
 // Related Topics 字典树 字符串 👍 3118 👎 0
 
 
-import java.util.HashSet;
 
 // leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
@@ -101,6 +100,41 @@ class Solution {
 
         // 如果都匹配，则返回第一个字符串（因为它就是最长的公共前缀）
         return first;
+    }
+
+    // LSP(S1,S2)
+    public String longestCommonPrefix(String[] strs)
+    {
+        int n = strs.length;
+
+        String longStr = strs[0];
+        for(int i = 1; i < n; ++i)
+        {
+            longStr = LSP(longStr, strs[i]);
+        }
+
+        return longStr;
+    }
+
+    public static String LSP(String s1, String s2)
+    {
+        if (s1.length() > s2.length())
+        {
+            String temp = s2;
+            s2 = s1;
+            s1 = temp;
+        }
+
+        int n = s1.length();
+
+        for(int i = 0; i < n; ++i)
+        {
+            if(s1.charAt(i) != s2.charAt(i))
+            {
+                return s1.substring(0, i);
+            }
+        }
+        return s1;
     }
 }
 // leetcode submit region end(Prohibit modification and deletion)
