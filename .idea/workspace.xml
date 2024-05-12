@@ -8,8 +8,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/leetcode/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/leetcode/editor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/leetcode/statistics.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/leetcode/statistics.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/[151]反转字符串中的单词.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/[151]反转字符串中的单词.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/practice/零矩阵.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/practice/零矩阵.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +82,7 @@
       <recent name="study" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.零矩阵">
+  <component name="RunManager" selected="应用程序.Main">
     <configuration name="零矩阵" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="practice.零矩阵" />
       <module name="Data_structures_and_algorithms" />
@@ -144,11 +144,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.Main" />
         <item itemvalue="应用程序.零矩阵" />
         <item itemvalue="应用程序.Printtokens2" />
         <item itemvalue="应用程序.exam.Main" />
         <item itemvalue="应用程序.test1" />
-        <item itemvalue="应用程序.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -279,6 +279,9 @@
       <workItem from="1715261269691" duration="5383000" />
       <workItem from="1715346004315" duration="7000" />
       <workItem from="1715347748515" duration="4248000" />
+      <workItem from="1715442738425" duration="51000" />
+      <workItem from="1715442803971" duration="65000" />
+      <workItem from="1715479753344" duration="9070000" />
     </task>
     <task id="LOCAL-00001" summary="动态规划 解题">
       <option name="closed" value="true" />
@@ -384,11 +387,30 @@
       <option name="project" value="LOCAL" />
       <updated>1715266981107</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="刷题">
+      <option name="closed" value="true" />
+      <created>1715442759744</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1715442759744</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
