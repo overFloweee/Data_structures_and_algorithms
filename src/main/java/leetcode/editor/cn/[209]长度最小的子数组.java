@@ -70,7 +70,7 @@ class Solution {
     }
 
 
-    // 官解:妙解，需要学习
+    // 官解:妙解，需要深入学习
     public int minSubArrayLen(int target, int[] nums) {
         int n = nums.length;
         int left = 0;
