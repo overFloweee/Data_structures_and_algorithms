@@ -32,26 +32,23 @@
 
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
 
 // leetcode submit region begin(Prohibit modification and deletion)
-class Solution
-{
-    public List<List<Integer>> generate(int numRows)
-    {
+class Solution {
+    public List<List<Integer>> generate1(int numRows) {
         List<List<Integer>> list = new ArrayList<>();
 
         ArrayList<Integer> addList = new ArrayList<>();
-        for (int i = 0; i < numRows; i++)
-        {
+        for (int i = 0; i < numRows; i++) {
             ArrayList<Integer> temp = new ArrayList<>();
-            for (int j = 0; j < i + 1; j++)
-            {
-                if (j == 0 || j == i)
-                {
+            for (int j = 0; j < i + 1; j++) {
+                if (j == 0 || j == i) {
                     temp.add(1);
                 }
-                else
-                {
+                else {
                     temp.add(addList.get(j - 1) + addList.get(j));
                 }
             }
@@ -61,6 +58,35 @@ class Solution
 
         return list;
 
+    }
+
+
+    // 100%
+    public List<List<Integer>> generate(int numRows) {
+        // 初始化动态规划数组
+        Integer[][] dp = new Integer[numRows][];
+        // 遍历每一行
+        for (int i = 0; i < numRows; i++) {
+            // 初始化当前行
+            dp[i] = new Integer[i + 1];
+            // 每一行的第一个和最后一个元素总是 1
+            dp[i][0] = dp[i][i] = 1;
+            // 计算中间元素
+            for (int j = 1; j < i; j++) {
+                // 中间元素等于上一行的相邻两个元素之和
+                dp[i][j] = dp[i - 1][j - 1] + dp[i - 1][j];
+            }
+
+        }
+
+        // 将动态规划数组转换为结果列表
+        List<List<Integer>> result = new ArrayList<>();
+        for (Integer[] row : dp) {
+            result.add(Arrays.asList(row));
+        }
+
+        // 返回结果列表
+        return result;
     }
 }
 // leetcode submit region end(Prohibit modification and deletion)
