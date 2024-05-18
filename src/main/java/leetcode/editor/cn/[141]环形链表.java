@@ -71,17 +71,13 @@ import java.util.HashSet;
  * }
  * }
  */
-public class Solution
-{
+public class Solution {
     // ListNode 重写了equals和hashcode
-    public boolean hasCycle1(ListNode head)
-    {
+    public boolean hasCycle1(ListNode head) {
         Set<ListNode> set = new HashSet<>();
-        while (head != null)
-        {
+        while (head != null) {
             boolean isAdd = set.add(head);
-            if (!isAdd)
-            {
+            if (!isAdd) {
                 return true;
             }
             head = head.next;
@@ -91,19 +87,15 @@ public class Solution
     }
 
     // 龟兔套圈 - 快慢指针
-    public boolean hasCycle(ListNode head)
-    {
-        if (head == null || head.next == null)
-        {
+    public boolean hasCycle(ListNode head) {
+        if (head == null || head.next == null) {
             return false;
         }
 
         ListNode slow = head;
         ListNode fast = head.next;
-        while (slow != fast)
-        {
-            if (fast == null || fast.next == null)
-            {
+        while (slow != fast) {
+            if (fast == null || fast.next == null) {
                 return false;
             }
             slow = slow.next;
@@ -111,5 +103,34 @@ public class Solution
         }
         return true;
     }
+
+
+    // 看完答案之后的解
+    public boolean hasCycle(ListNode head) {
+
+        if (head == null || head.next == null) {
+            return false;
+        }
+
+        ListNode p1 = head;
+        ListNode p2 = p1.next;
+
+
+        while(p2 != null && p2.next != null)
+        {
+            if (p1 == p2)
+            {
+                return true;
+            }
+            p1 = p1.next;
+            p2 = p2.next.next;
+        }
+
+        return false;
+
+    }
+
+
+
 }
 // leetcode submit region end(Prohibit modification and deletion)
