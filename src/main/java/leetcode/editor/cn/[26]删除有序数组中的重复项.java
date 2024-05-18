@@ -61,7 +61,7 @@
 class Solution
 {
     // 二解
-    public int removeDuplicates(int[] nums)
+    public int removeDuplicates1(int[] nums)
     {
         if (nums.length == 1)
         {
@@ -138,6 +138,22 @@ class Solution
             }
         }
         return index + 1;
+    }
+
+
+    // 再次解
+    public int removeDuplicates(int[] nums) {
+        int left = 0;
+        int n = nums.length;
+        for(int right =0; right < n; right++)
+        {
+            if (nums[left] != nums[right])
+            {
+                nums[++left] = nums[right];
+            }
+        }
+
+        return left + 1;
     }
 }
 // leetcode submit region end(Prohibit modification and deletion)
