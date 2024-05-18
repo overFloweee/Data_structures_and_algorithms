@@ -71,7 +71,7 @@ class Solution {
     }
 
     // 3ms 88%
-    public String reverseWords(String s) {
+    public String reverseWords4(String s) {
         StringBuilder sb = new StringBuilder();
         String[] split = s.split(" ");
         for (String p : split) {
@@ -80,6 +80,19 @@ class Solution {
         }
 
         return sb.substring(0, sb.length() - 1).toString();
+    }
+
+    public String reverseWords(String s) {
+        StringBuilder sb = new StringBuilder();
+        String[] arr = s.split(" ");
+        for (String p : arr) {
+            sb.append(new StringBuilder(p).reverse());
+            sb.append(" ");
+        }
+
+        // return sb.toString().substring(0, s.length());
+        return sb.substring(0, sb.length() - 1).toString();
+
     }
 
 }
