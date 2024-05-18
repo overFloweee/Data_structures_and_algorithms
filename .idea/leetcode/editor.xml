@@ -179,6 +179,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/[153]寻找旋转排序数组中的最小值.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/doc/content/[153]寻找旋转排序数组中的最小值.md" />
+              <option name="frontendQuestionId" value="leetcode.cn153" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/[153]寻找旋转排序数组中的最小值.java" />
+              <option name="titleSlug" value="find-minimum-in-rotated-sorted-array" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/[160]相交链表.java">
           <value>
             <LeetcodeEditor>
