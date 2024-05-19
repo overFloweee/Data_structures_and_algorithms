@@ -87,7 +87,7 @@ public class Solution {
     }
 
     // 龟兔套圈 - 快慢指针
-    public boolean hasCycle(ListNode head) {
+    public boolean hasCycle2(ListNode head) {
         if (head == null || head.next == null) {
             return false;
         }
@@ -108,24 +108,17 @@ public class Solution {
     // 看完答案之后的解
     public boolean hasCycle(ListNode head) {
 
-        if (head == null || head.next == null) {
-            return false;
-        }
-
         ListNode p1 = head;
-        ListNode p2 = p1.next;
-
-
+        ListNode p2 = head;
         while(p2 != null && p2.next != null)
         {
+            p1 = p1.next;
+            p2 = p2.next.next;
             if (p1 == p2)
             {
                 return true;
             }
-            p1 = p1.next;
-            p2 = p2.next.next;
         }
-
         return false;
 
     }
