@@ -72,18 +72,14 @@ import java.util.HashSet;
  * }
  * }
  */
-public class Solution
-{
+public class Solution {
     // set
-    public ListNode detectCycle1(ListNode head)
-    {
+    public ListNode detectCycle1(ListNode head) {
         HashSet<ListNode> set = new HashSet<>();
 
-        while (head != null)
-        {
+        while (head != null) {
             boolean isAdd = set.add(head);
-            if (!isAdd)
-            {
+            if (!isAdd) {
                 return head;
             }
             head = head.next;
@@ -92,31 +88,24 @@ public class Solution
     }
 
     // 判环算法
-    public ListNode detectCycle(ListNode head)
-    {
-
+    public ListNode detectCycle(ListNode head) {
         ListNode p1 = head;
         ListNode p2 = head;
 
-        while (p2 != null && p2.next != null)
-        {
+        while (p2 != null && p2.next != null) {
             p1 = p1.next;
             p2 = p2.next.next;
             // 相遇了
-            if (p1 == p2)
-            {
+            if (p1 == p2) {
                 ListNode ptr = head;
-                while (ptr != p1)
-                {
+                while (ptr != p1) {
                     p1 = p1.next;
                     ptr = ptr.next;
                 }
                 return ptr;
             }
         }
-
         return null;
-
     }
 }
 // leetcode submit region end(Prohibit modification and deletion)
