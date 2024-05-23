@@ -839,6 +839,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/[LCR 021]删除链表的倒数第 N 个结点.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/doc/content/[LCR 021]删除链表的倒数第 N 个结点.md" />
+              <option name="frontendQuestionId" value="leetcode.cnLCR 021" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/[LCR 021]删除链表的倒数第 N 个结点.java" />
+              <option name="titleSlug" value="SLwz0R" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/[LCR 023]相交链表.java">
           <value>
             <LeetcodeEditor>
