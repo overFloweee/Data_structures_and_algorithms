@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e1fe7745-aaf7-47e2-955b-8388cc84bcec" name="更改" comment="刷题">
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/[LCR 021]删除链表的倒数第 N 个结点.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/doc/content/[LCR 021]删除链表的倒数第 N 个结点.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -293,7 +291,7 @@
       <workItem from="1716208831433" duration="330000" />
       <workItem from="1716209179877" duration="3062000" />
       <workItem from="1716473047842" duration="471000" />
-      <workItem from="1716702692738" duration="1348000" />
+      <workItem from="1716702692738" duration="2296000" />
     </task>
     <task id="LOCAL-00001" summary="动态规划 解题">
       <option name="closed" value="true" />
@@ -607,7 +605,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716473424226</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="刷题">
+      <option name="closed" value="true" />
+      <created>1716730305416</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1716730305416</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
