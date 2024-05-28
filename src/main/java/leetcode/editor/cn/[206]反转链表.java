@@ -57,6 +57,7 @@
  */
 class Solution
 {
+
     // 依次翻转
     public ListNode reverseList1(ListNode head)
     {
@@ -93,7 +94,7 @@ class Solution
     }
 
     // 逆序 递归
-    public ListNode reverseList(ListNode p)
+    public ListNode reverseList3(ListNode p)
     {
         if (p == null || p.next == null)
         {

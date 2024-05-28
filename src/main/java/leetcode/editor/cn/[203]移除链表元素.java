@@ -58,7 +58,6 @@ class Solution
             return head;
         }
         ListNode sentinel = new ListNode(-1, head);
-
         // 排除 head.val == val
         while (sentinel.next != null && sentinel.next.val == val)
         {
