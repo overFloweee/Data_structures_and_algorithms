@@ -53,25 +53,21 @@
  * ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
-class Solution
-{
+class Solution {
     // 给了超出 long 的数据，无语
-    public ListNode addTwoNumbers1(ListNode l1, ListNode l2)
-    {
+    public ListNode addTwoNumbers1(ListNode l1, ListNode l2) {
         ListNode p1 = l1;
         ListNode p2 = l2;
         long num = 0L;
         long x = 1;
-        while (l1 != null)
-        {
+        while (l1 != null) {
             num += l1.val * x;
             x = x * 10;
             l1 = l1.next;
         }
         x = 1;
 
-        while (l2 != null)
-        {
+        while (l2 != null) {
             num += l2.val * x;
             x = x * 10;
             l2 = l2.next;
@@ -80,13 +76,11 @@ class Solution
         System.out.println(num);
         ListNode sentinel = new ListNode(-1);
         ListNode p = sentinel;
-        while (true)
-        {
+        while (true) {
             long temp = num % 10;
             p.next = new ListNode((int) temp);
             p = p.next;
-            if (num / 10 == 0)
-            {
+            if (num / 10 == 0) {
                 break;
             }
             num /= 10;
@@ -97,30 +91,25 @@ class Solution
 
 
     // 我的解法 击败1%
-    public ListNode addTwoNumbers2(ListNode l1, ListNode l2)
-    {
+    public ListNode addTwoNumbers2(ListNode l1, ListNode l2) {
         ListNode p1 = l1;
         ListNode p2 = l2;
         ListNode sentinel = new ListNode(-1);
         ListNode p = sentinel;
         int temp;
 
-        while (p1 != null || p2 != null)
-        {
+        while (p1 != null || p2 != null) {
             temp = 0;
 
-            if (p1 == null)
-            {
+            if (p1 == null) {
                 temp = p2.val;
                 p2 = p2.next;
             }
-            else if (p2 == null)
-            {
+            else if (p2 == null) {
                 temp = p1.val;
                 p1 = p1.next;
             }
-            else
-            {
+            else {
                 temp = p1.val + p2.val;
                 p1 = p1.next;
                 p2 = p2.next;
@@ -135,12 +124,9 @@ class Solution
         p = sentinel;
         ListNode p3 = p.next;
         int tempNum = 0;
-        while (p.next != null)
-        {
-            if (p3.val >= 10)
-            {
-                if (p3.next == null)
-                {
+        while (p.next != null) {
+            if (p3.val >= 10) {
+                if (p3.next == null) {
                     p3.next = new ListNode(0);
                 }
 
@@ -152,8 +138,7 @@ class Solution
                 p3 = p3.next;
 
             }
-            else
-            {
+            else {
                 p = p.next;
                 p3 = p.next;
             }
@@ -165,8 +150,7 @@ class Solution
 
     }
 
-    public ListNode addTwoNumbers(ListNode l1, ListNode l2)
-    {
+    public ListNode addTwoNumbers3(ListNode l1, ListNode l2) {
         ListNode p1 = l1;
         ListNode p2 = l2;
         ListNode sentinel = new ListNode(-1);
@@ -176,23 +160,19 @@ class Solution
 
         int temp;
 
-        while (p1 != null || p2 != null)
-        {
+        while (p1 != null || p2 != null) {
             // 相加
             temp = 0;
 
-            if (p1 == null)
-            {
+            if (p1 == null) {
                 temp = p2.val;
                 p2 = p2.next;
             }
-            else if (p2 == null)
-            {
+            else if (p2 == null) {
                 temp = p1.val;
                 p1 = p1.next;
             }
-            else
-            {
+            else {
                 temp = p1.val + p2.val;
                 p1 = p1.next;
                 p2 = p2.next;
@@ -201,18 +181,15 @@ class Solution
 
 
             // 存储，如果 > 10 就进位
-            if (p != null)
-            {
+            if (p != null) {
                 p.val = p.val + temp;
             }
-            else
-            {
+            else {
                 prev.next = new ListNode(temp);
                 p = prev.next;
             }
 
-            if (p.val >= 10)
-            {
+            if (p.val >= 10) {
                 p.next = new ListNode(1);
                 p.val = p.val % 10;
             }
@@ -222,7 +199,129 @@ class Solution
             prev = prev.next;
         }
         return sentinel.next;
+    }
 
+    // 二解 - 超过100%
+    public ListNode addTwoNumbers6(ListNode l1, ListNode l2) {
+        ListNode head = new ListNode(0);
+        ListNode sum = head;
+
+
+        int add = 0;
+        while (l1 != null || l2 != null) {
+            if (l1 == null) {
+                while (l2 != null && add == 1) {
+                    int temp = l2.val + add;
+                    sum.next = new ListNode(temp % 10);
+                    if (temp >= 10) {
+                        add = 1;
+                    }
+                    else {
+                        add = 0;
+                    }
+                    sum = sum.next;
+                    l2 = l2.next;
+                }
+
+                if (add == 1) {
+                    sum.next = new ListNode(1);
+                }
+                else {
+                    sum.next = l2;
+                    return head.next;
+                }
+            }
+            else if (l2 == null) {
+                while (l1 != null && add == 1) {
+                    int temp = l1.val + add;
+                    sum.next = new ListNode(temp % 10);
+                    if (temp >= 10) {
+                        add = 1;
+                    }
+                    else {
+                        add = 0;
+                    }
+                    sum = sum.next;
+                    l1 = l1.next;
+                }
+
+                if (add == 1) {
+                    sum.next = new ListNode(1);
+                }
+                else {
+                    sum.next = l1;
+                    return head.next;
+                }
+            }
+            else {
+                int temp = l1.val + l2.val + add;
+                sum.next = new ListNode(temp % 10);
+
+                if (temp >= 10) {
+                    add = 1;
+                }
+                else {
+                    add = 0;
+                }
+                l1 = l1.next;
+                l2 = l2.next;
+                sum = sum.next;
+            }
+        }
+
+        if (add == 1) {
+            sum.next = new ListNode(1);
+        }
+
+        return head.next;
+    }
+
+
+    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+        ListNode head = new ListNode(0);
+        ListNode sum = head;
+
+
+        int add = 0;
+        while (l1 != null && l2 != null) {
+            int temp = l1.val + l2.val + add;
+            sum.next = new ListNode(temp % 10);
+
+            if (temp >= 10) {
+                add = 1;
+            }
+            else {
+                add = 0;
+            }
+            l1 = l1.next;
+            l2 = l2.next;
+            sum = sum.next;
+        }
+
+        l2 = l2 == null ? l1 : l2;
+
+        while (l2 != null && add == 1) {
+            int temp = l2.val + add;
+            sum.next = new ListNode(temp % 10);
+            if (temp >= 10) {
+                add = 1;
+            }
+            else {
+                add = 0;
+            }
+            sum = sum.next;
+            l2 = l2.next;
+        }
+
+        if (add == 1) {
+            sum.next = new ListNode(1);
+        }
+        else {
+            sum.next = l2;
+            return head.next;
+        }
+
+        return head.next;
     }
 }
 // leetcode submit region end(Prohibit modification and deletion)
