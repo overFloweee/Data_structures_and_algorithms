@@ -69,6 +69,30 @@ class Solution {
         return 0;
     }
 
+    public int minSubArrayLen(int target, int[] nums) {
+        int n = nums.length;
+        int min = Integer.MAX_VALUE;
+
+        int p1 = 0;
+        int p2 = 0;
+        int temp = 0;
+        while (p2 < n)
+        {
+            temp += nums[p2];
+            while (temp >= target)
+            {
+                min = Integer.min(min, p2 - p1 + 1);
+                temp -= nums[p1];
+                p1++;
+            }
+            p2++;
+
+        }
+
+        return Integer.MAX_VALUE == min ? 0 : min;
+
+    }
+
 
     // 官解:妙解，需要深入学习
     public int minSubArrayLen(int target, int[] nums) {

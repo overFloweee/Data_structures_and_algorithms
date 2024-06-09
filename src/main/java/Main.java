@@ -5,6 +5,12 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
+
+        int[] intArray = {1, 2, 3, 4}; // 你的int数组
+        int[] array = Arrays.stream(intArray).sorted().toArray();
+
+        System.out.println(Arrays.toString(array));
+
         // String str1 = "this     is text";
         // String str2 = "this  \n   is text";
         // String regex = "this\\s+is\\s+text";
