@@ -42,13 +42,14 @@
  * }
  */
 class Solution {
-    public ListNode rotateRight(ListNode head, int k) {
+    // 初解 - 没解出来
+    public ListNode rotateRight1(ListNode head, int k) {
         if (head == null || k == 0) {
             return head;
         }
 
-        ListNode dummy = new ListNode(0, head);
         ListNode p = head;
+        // 这里有问题
         for (int i = 0; i < k; i++) {
             p = p.next;
             if (p == null) {
@@ -69,6 +70,59 @@ class Solution {
         return newHead;
     }
 
+    public ListNode rotateRight2(ListNode head, int k) {
+        if (k == 0 || head == null || head.next == null) {
+            return head;
+        }
+        int n = 1;
+        ListNode iter = head;
+        while (iter.next != null) {
+            iter = iter.next;
+            n++;
+        }
+        int add = n - k % n;
+        if (add == n) {
+            return head;
+        }
+        iter.next = head;
+        while (add-- > 0) {
+            iter = iter.next;
+        }
+        ListNode ret = iter.next;
+        iter.next = null;
+        return ret;
+    }
+    // 优化解
+    public ListNode rotateRight(ListNode head, int k) {
+        if (head == null || k == 0)
+        {
+            return head;
+        }
+
+        ListNode tail = head;
+        int n = 1;
+        while (tail.next != null)
+        {
+            tail = tail.next;
+            n++;
+        }
+
+        ListNode p = head;
+        k = k % n;
+
+        // 这里是要找到第 n - k个节点，不是之前以为的第k个
+        for(int i = 0; i < n - k - 1; ++i)
+        {
+            p = p.next;
+        }
+
+        // 成环
+        tail.next = head;
+        head = p.next;
+        p.next = null;
+
+        return head;
+    }
 
 
 }

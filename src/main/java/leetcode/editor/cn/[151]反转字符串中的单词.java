@@ -130,7 +130,7 @@ class Solution {
         return sb.toString().trim();
     }
 
-    public String reverseWords(String s) {
+    public String reverseWords3(String s) {
         String[] arr = s.trim().split("\\s+");
 
         StringBuilder sb = new StringBuilder();
@@ -142,6 +142,33 @@ class Solution {
             }
         }
         return sb.toString();
+    }
+
+
+    // 二解
+    public String reverseWords(String s) {
+
+        String[] arr = s.trim().split(" ");
+
+
+        int p1 = 0;
+        int p2 = arr.length - 1;
+        while (p1 < p2) {
+            String str = arr[p1];
+            arr[p1] = arr[p2];
+            arr[p2] = str;
+            p1++;
+            p2--;
+        }
+
+        StringBuilder sb = new StringBuilder();
+        for (String str : arr) {
+            if (!"".equals(str))
+            {
+                sb.append(str).append(" ");
+            }
+        }
+        return sb.toString().trim();
     }
 
 
