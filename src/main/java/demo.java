@@ -3,10 +3,12 @@ import java.util.*;
 public class demo {
     public static void main(String[] args) {
 
+        System.out.println(repeatedSubstringPattern("abab"));
+
         // new Scanner();
-        String s = "a1b2c3";
-        String string = s.replaceAll("\\d", "number");
-        System.out.println(string);
+        // String s = "a1b2c3";
+        // String string = s.replaceAll("\\d", "number");
+        // System.out.println(string);
 
         // String s = "abcdefg";
         // char[] arr1 = s.toCharArray();
@@ -84,5 +86,47 @@ public class demo {
             start++;
             end--;
         }
+    }
+
+    public static boolean repeatedSubstringPattern(String s) {
+        int n = s.length();
+
+        Set<String> set = new HashSet<>();
+        for (int i = 1; i <= n / 2; ++i) {
+            if (n % 2 == 0) {
+                set.add(s.substring(0, i));
+            }
+            else if (n % 2 != 0 && i % 2 != 0) {
+                set.add(s.substring(0, i));
+            }
+        }
+
+
+        for (String str : set) {
+            boolean flag = true;
+            int len = str.length();
+
+
+            for (int i = 0; i < n; i += len) {
+                System.out.println(str);
+
+                System.out.println(s.substring(i, i + len));
+                System.out.println(str.equals(s.substring(i, i + len + 1)));
+
+                System.out.println("====");
+                if (!str.equals(s.substring(i, i + len + 1))) {
+                    flag = false;
+                    break;
+                }
+
+            }
+
+            if (flag) {
+                return true;
+            }
+
+        }
+
+        return false;
     }
 }

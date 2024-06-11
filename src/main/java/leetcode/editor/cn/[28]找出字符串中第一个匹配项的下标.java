@@ -54,7 +54,7 @@ class Solution {
     }
 
     // 初解
-    public int strStr3(String haystack, String needle) {
+    public int strStr(String haystack, String needle) {
         int n = haystack.length();
         int len = needle.length();
         for (int i = 0; i < n; i++) {
@@ -77,7 +77,7 @@ class Solution {
     }
 
     // 官解
-    public int strStr(String haystack, String needle) {
+    public int strStr3(String haystack, String needle) {
         int n = haystack.length();
         int len = needle.length();
 

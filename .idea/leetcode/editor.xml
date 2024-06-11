@@ -718,6 +718,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/[459]重复的子字符串.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/doc/content/[459]重复的子字符串.md" />
+              <option name="frontendQuestionId" value="leetcode.cn459" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/[459]重复的子字符串.java" />
+              <option name="titleSlug" value="repeated-substring-pattern" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/[485]最大连续 1 的个数.java">
           <value>
             <LeetcodeEditor>
