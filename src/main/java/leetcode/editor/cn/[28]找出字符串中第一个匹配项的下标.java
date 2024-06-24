@@ -54,7 +54,9 @@ class Solution {
     }
 
     // 初解
-    public int strStr(String haystack, String needle) {
+    // 执行耗时:0 ms,击败了100.00% 的Java用户
+    // 内存消耗:40.5 MB,击败了55.22% 的Java用户
+    public int strStr3 (String haystack, String needle) {
         int n = haystack.length();
         int len = needle.length();
         for (int i = 0; i < n; i++) {
@@ -77,7 +79,7 @@ class Solution {
     }
 
     // 官解
-    public int strStr3(String haystack, String needle) {
+    public int strStr4(String haystack, String needle) {
         int n = haystack.length();
         int len = needle.length();
 
@@ -95,6 +97,12 @@ class Solution {
         }
 
         return -1;
+    }
+
+
+    // KMP
+    public int strStr(String haystack, String needle) {
+        return 1;
     }
 
 

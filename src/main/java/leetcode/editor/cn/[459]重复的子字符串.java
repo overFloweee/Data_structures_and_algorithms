@@ -73,9 +73,37 @@ class Solution {
 
     // 好离谱的解
     // 执行耗时:82 ms,击败了38.63% 的Java用户
-    public boolean repeatedSubstringPattern(String s) {
+    public boolean repeatedSubstringPattern2(String s) {
         String str = s + s;
         return str.substring(1, str.length() - 1).contains(s);
+    }
+
+
+    // KMP算法
+    public boolean repeatedSubstringPattern2(String s) {
+
+        int n = s.length();
+        int[] next = getNext(s);
+
+        for (int i = 1; i <= n / 2; i++) {
+            String prefix = s.substring(0, i);
+
+        }
+
+    }
+
+    // 获取最大相同前后缀 数组
+    public int[] getNext(int[] next, String str) {
+        int j = 0;
+        next[0] = 0;
+        int n = str.length();
+
+        str.contains() for (int i = 1; i < n; i++) {
+
+        }
+
+        return;
+
     }
 
 
