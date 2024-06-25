@@ -48,38 +48,30 @@
  * ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
-class Solution
-{
+class Solution {
     // 先删除 头结点，再考虑后续节点
-    public ListNode removeElements1(ListNode head, int val)
-    {
-        if (head == null)
-        {
+    public ListNode removeElements1(ListNode head, int val) {
+        if (head == null) {
             return head;
         }
         ListNode sentinel = new ListNode(-1, head);
         // 排除 head.val == val
-        while (sentinel.next != null && sentinel.next.val == val)
-        {
+        while (sentinel.next != null && sentinel.next.val == val) {
             sentinel.next = sentinel.next.next;
         }
-        if (sentinel.next == null)
-        {
+        if (sentinel.next == null) {
             return sentinel.next;
         }
 
         ListNode p1 = sentinel.next;
         ListNode p2 = p1.next;
 
-        while (p2 != null)
-        {
-            if (p2.val == val)
-            {
+        while (p2 != null) {
+            if (p2.val == val) {
                 p1.next = p2.next;
                 p2 = p1.next;
             }
-            else
-            {
+            else {
                 p1 = p1.next;
                 p2 = p2.next;
             }
@@ -89,19 +81,15 @@ class Solution
     }
 
     // 优化 删除头部节点
-    public ListNode removeElements2(ListNode head, int val)
-    {
+    public ListNode removeElements2(ListNode head, int val) {
         ListNode sentinel = new ListNode(-1, head);
         ListNode p = sentinel;
-        while (p.next != null)
-        {
-            if (p.next.val == val)
-            {
+        while (p.next != null) {
+            if (p.next.val == val) {
                 p.next = p.next.next;
                 // 停留在原地
             }
-            else
-            {
+            else {
                 p = p.next;
             }
         }
@@ -110,24 +98,42 @@ class Solution
 
 
     // 递归
-    public ListNode removeElements3(ListNode head, int val)
-    {
-        if (head == null)
-        {
+    public ListNode removeElements3(ListNode head, int val) {
+        if (head == null) {
             return null;
         }
-        if (head.val == val)
-        {
+        if (head.val == val) {
             // 如果值匹配，则跳过该值，直接下一轮循环
             head.next = removeElements(head.next, val);
             return head.next;
         }
-        else
-        {
+        else {
             // 如果值不匹配，连接该值，直接下一轮循环
             head.next = removeElements(head.next, val);
             return head;
         }
+    }
+
+    public ListNode removeElements(ListNode head, int val) {
+        if (head == null) {
+            return null;
+        }
+        ListNode l = new ListNode(0, head);
+
+        ListNode r = l;
+
+        while (r != null && r.next != null) {
+            if (r.next.val == val) {
+                r.next = r.next.next;
+            }
+            else
+            {
+                r = r.next;
+            }
+        }
+
+        return l.next;
+
     }
 
 }
