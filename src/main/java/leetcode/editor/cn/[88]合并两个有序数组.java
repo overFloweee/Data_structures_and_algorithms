@@ -55,23 +55,18 @@
 
 
 // leetcode submit region begin(Prohibit modification and deletion)
-class Solution
-{
-    public void merge(int[] nums1, int m, int[] nums2, int n)
-    {
+class Solution {
+    public void merge(int[] nums1, int m, int[] nums2, int n) {
 
         int p1 = m - 1;
         int p2 = n - 1;
         int index = m + n - 1;
-        while (p2 >= 0 || p1 >= 0)
-        {
-            if (p1 == -1)
-            {
+        while (p2 >= 0 || p1 >= 0) {
+            if (p1 == -1) {
                 System.arraycopy(nums2, 0, nums1, 0, index + 1);
                 break;
             }
-            if (p2 == -1)
-            {
+            if (p2 == -1) {
                 System.arraycopy(nums1, 0, nums1, 0, index + 1);
                 break;
             }
@@ -79,18 +74,43 @@ class Solution
 
             int s1 = nums1[p1];
             int s2 = nums2[p2];
-            if (s1 > s2)
-            {
+            if (s1 > s2) {
                 nums1[index] = s1;
                 index--;
                 p1--;
             }
-            else
-            {
+            else {
                 nums1[index] = s2;
                 index--;
                 p2--;
             }
+        }
+    }
+
+
+    // 二刷
+    public void merge2(int[] nums1, int m, int[] nums2, int n) {
+
+        int l = m - 1;
+        int r = n - 1;
+
+        int index = m + n - 1;
+
+        while (l >= 0 && r >= 0) {
+            int lnum = nums1[l];
+            int rnum = nums2[r];
+            if (lnum >= rnum) {
+                nums1[index--] = lnum;
+                l--;
+            }
+            else {
+                nums1[index--] = rnum;
+                r--;
+            }
+        }
+
+        while (r != -1) {
+            nums1[index--] = nums2[r--];
         }
     }
 }
