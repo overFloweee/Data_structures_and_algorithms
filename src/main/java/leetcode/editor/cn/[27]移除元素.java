@@ -123,7 +123,7 @@ class Solution {
     }
 
     // 官解2
-    public int removeElement(int[] nums, int val) {
+    public int removeElement3(int[] nums, int val) {
         int n = nums.length;
         int p1 = 0;
         int p2 = n - 1;
@@ -137,5 +137,19 @@ class Solution {
         }
         return p1;
     }
+
+
+    // 二刷
+    public int removeElement(int[] nums, int val) {
+        int l = 0;
+        int n = nums.length;
+        for (int r = 0; r < n; r++) {
+            if (nums[r] != val) {
+                nums[l++] = nums[r];
+            }
+        }
+        return l;
+    }
+
 }
 // leetcode submit region end(Prohibit modification and deletion)
