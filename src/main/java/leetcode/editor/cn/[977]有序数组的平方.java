@@ -50,7 +50,7 @@ import java.util.List;
 class Solution {
 
     // 初解
-    public int[] sortedSquares(int[] nums) {
+    public int[] sortedSquares1(int[] nums) {
         int n = nums.length;
         for (int i = 0; i < n; i++) {
             int num = nums[i];
@@ -62,5 +62,57 @@ class Solution {
     }
 
 
+    // 二刷
+    public int[] sortedSquares2(int[] nums) {
+        int n = nums.length;
+        for (int i = 0; i < n; i++) {
+            nums[i] = nums[i] * nums[i];
+        }
+        Arrays.sort(nums);
+        return nums;
+    }
+
+    // 优解
+    public int[] sortedSquares(int[] nums) {
+        int n = nums.length;
+        int[] res = new int[n];
+
+        int index = n - 1;
+        int l = 0;
+        int r = n - 1;
+        while (l <= r) {
+            int lnum = nums[l] * nums[l];
+            int rnum = nums[r] * nums[r];
+            if (lnum >= rnum) {
+                res[index--] = lnum;
+                l++;
+            }
+            else {
+                res[index--] = rnum;
+                r--;
+            }
+        }
+
+        return res;
+    }
+
+
+    public int[] sortedSquares3(int[] nums) {
+        int right = nums.length - 1;
+        int left = 0;
+        int[] result = new int[nums.length];
+        int index = result.length - 1;
+        while (left <= right) {
+            if (nums[left] * nums[left] > nums[right] * nums[right]) {
+                // 正数的相对位置是不变的， 需要调整的是负数平方后的相对位置
+                result[index--] = nums[left] * nums[left];
+                ++left;
+            } else {
+                result[index--] = nums[right] * nums[right];
+                --right;
+            }
+        }
+        return result;
+    }
 }
 // leetcode submit region end(Prohibit modification and deletion)

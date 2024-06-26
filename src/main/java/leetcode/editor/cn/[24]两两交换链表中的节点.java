@@ -47,12 +47,9 @@
  * ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
-class Solution
-{
-    public ListNode swapPairs(ListNode head)
-    {
-        if (head == null)
-        {
+class Solution {
+    public ListNode swapPairs1(ListNode head) {
+        if (head == null) {
             return head;
         }
 
@@ -61,15 +58,13 @@ class Solution
         ListNode p2 = sentinel.next;
         ListNode temp;
 
-        while (p2.next != null)
-        {
+        while (p2.next != null) {
             temp = p2.next;
             p2.next = temp.next;
             temp.next = p2;
             p1.next = temp;
 
-            if (p2.next == null)
-            {
+            if (p2.next == null) {
                 break;
             }
             p1 = p2;
@@ -80,16 +75,43 @@ class Solution
     }
 
     // * 递归
-    public ListNode swapPairs(ListNode head)
-    {
-        if (head == null || head.next == null)
-        {
+    public ListNode swapPairs2(ListNode head) {
+        if (head == null || head.next == null) {
             return head;
         }
         ListNode newHead = head.next;
         head.next = swapPairs(newHead.next);
         newHead.next = head;
         return newHead;
+    }
+
+    // 二刷
+    public ListNode swapPairs(ListNode head) {
+        if (head == null || head.next == null) {
+            return head;
+        }
+        ListNode dump = new ListNode(0, head);
+
+
+        ListNode l = head;
+        ListNode r = head.next;
+        ListNode prev = dump;
+        ListNode next = null;
+
+        while (r != null) {
+            next = r.next;
+            r.next = l;
+            l.next = next;
+            prev.next = r;
+
+            prev = l;
+            l = next;
+            if (l == null) {
+                break;
+            }
+            r = l.next;
+        }
+        return dump.next;
     }
 }
 // leetcode submit region end(Prohibit modification and deletion)
