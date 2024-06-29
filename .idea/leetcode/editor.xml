@@ -1169,6 +1169,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/[LCR 032]有效的字母异位词.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/doc/content/[LCR 032]有效的字母异位词.md" />
+              <option name="frontendQuestionId" value="leetcode.cnLCR 032" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/[LCR 032]有效的字母异位词.java" />
+              <option name="titleSlug" value="dKk3P7" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/[LCR 036]逆波兰表达式求值.java">
           <value>
             <LeetcodeEditor>

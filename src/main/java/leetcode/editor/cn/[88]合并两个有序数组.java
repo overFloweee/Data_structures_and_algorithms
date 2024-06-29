@@ -90,10 +90,8 @@ class Solution {
 
     // 二刷
     public void merge2(int[] nums1, int m, int[] nums2, int n) {
-
         int l = m - 1;
         int r = n - 1;
-
         int index = m + n - 1;
 
         while (l >= 0 && r >= 0) {
