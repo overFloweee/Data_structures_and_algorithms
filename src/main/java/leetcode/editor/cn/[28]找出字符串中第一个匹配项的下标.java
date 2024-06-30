@@ -34,6 +34,7 @@
 
 // leetcode submit region begin(Prohibit modification and deletion)
 
+import java.util.Arrays;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -56,7 +57,7 @@ class Solution {
     // 初解
     // 执行耗时:0 ms,击败了100.00% 的Java用户
     // 内存消耗:40.5 MB,击败了55.22% 的Java用户
-    public int strStr3 (String haystack, String needle) {
+    public int strStr3(String haystack, String needle) {
         int n = haystack.length();
         int len = needle.length();
         for (int i = 0; i < n; i++) {
@@ -102,9 +103,55 @@ class Solution {
 
     // KMP
     public int strStr(String haystack, String needle) {
-        return 1;
+        char[] origin = haystack.toCharArray();
+        char[] partten = needle.toCharArray();
+
+        // 获取前缀表
+        int[] lps = getPreTable(partten);
+        // System.out.println(Arrays.toString(lps));
+
+        int i = 0;
+        int j = 0;
+        while (partten.length - j <= origin.length - i) {
+            if (origin[i] == partten[j]) {
+                i++;
+                j++;
+            }
+            else if (j == 0) {
+                i++;
+            }
+            else {
+                j = lps[j - 1];
+            }
+            // 在j++之后，找到解的情况
+            if (j == partten.length) {
+                return i - j;
+            }
+        }
+        return -1;
     }
 
 
+    public static int[] getPreTable(char[] partten) {
+        int n = partten.length;
+        int[] lps = new int[n];
+
+        int i = 1;
+        int j = 0;
+        while (i < n) {
+            if (partten[i] == partten[j]) {
+                lps[i] = j + 1;
+                i++;
+                j++;
+            }
+            else if (j == 0) {
+                i++;
+            }
+            else {
+                j = lps[j - 1];
+            }
+        }
+        return lps;
+    }
 }
 // leetcode submit region end(Prohibit modification and deletion)
