@@ -36,7 +36,7 @@ import java.util.Arrays;
 // leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     // 初解：解不出来
-    public String longestPalindrome(String s) {
+    public String longestPalindrome1(String s) {
         int n = s.length();
         boolean[][] dp = new boolean[n][n];
         dp[0][0] = true;
@@ -61,9 +61,11 @@ class Solution {
     }
 
     // ai相似解
-    public String longestPalindrome(String s) {
+    public String longestPalindrome2(String s) {
         int n = s.length();
-        if (n == 0) return "";
+        if (n == 0) {
+            return "";
+        }
 
         boolean[][] dp = new boolean[n][n];
         String res = "";
@@ -98,7 +100,54 @@ class Solution {
         return res;
     }
 
-    // 优化解
+    // 二刷
+    // 中心扩散法
+    public String longestPalindrome(String s) {
+        StringBuilder sb = new StringBuilder(0);
+
+        char[] arr = s.toCharArray();
+        int n = arr.length;
+
+        // 当回文子串为奇数时
+        for (int cur = 0; cur < n; cur++) {
+            int i = cur;
+            int j = cur;
+            while (i >= 0 && j < n && arr[i] == arr[j]) {
+                i--;
+                j++;
+            }
+            // 此时不是回文串，需要回退一次
+            i++;
+            j--;
+
+            int len = j - i + 1;
+            if (len > sb.length()) {
+                sb = new StringBuilder(s.substring(i, j + 1));
+            }
+        }
+
+        // 当回文子串为偶数时
+        for (int cur = 1; cur < n; cur++) {
+            if (arr[cur] == arr[cur - 1]) {
+                int i = cur;
+                int j = cur - 1;
+                while (i >= 0 && j < n && arr[i] == arr[j]) {
+                    i--;
+                    j++;
+                }
+                // 此时不是回文串，需要回退一次
+                i++;
+                j--;
+
+                int len = j - i + 1;
+                if (len > sb.length()) {
+                    sb = new StringBuilder(s.substring(i, j + 1));
+                }
+            }
+        }
+
+        return sb.toString();
+    }
 
 }
 // leetcode submit region end(Prohibit modification and deletion)
