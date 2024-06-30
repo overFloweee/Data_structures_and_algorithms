@@ -38,7 +38,7 @@ import java.util.Arrays;
 // leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     // 排序 + 比较
-    public boolean isAnagram(String s, String t) {
+    public boolean isAnagram1(String s, String t) {
         int n1 = s.length();
         int n2 = t.length();
         if (n1 != n2) {
@@ -61,25 +61,19 @@ class Solution {
     }
 
 
-    public boolean isAnagram2(String s, String t) {
-        int n1 = s.length();
-        int n2 = t.length();
-        if (n1 != n2) {
-            return false;
+    public boolean isAnagram(String s, String t) {
+        int[] record = new int[26];
+        for (char c : s.toCharArray()) {
+            record[c - 'a'] += 1;
         }
-
-        int[] table = new int[26];
-        for (int i = 0; i < n1; i++) {
-            table[s.charAt(i) - 'a']++;
+        for (char c : t.toCharArray()) {
+            record[c - 'a'] -= 1;
         }
-
-        for (int i = 0; i < n2; i++) {
-            table[t.charAt(i) - 'a']--;
-            if (table[t.charAt(i) - 'a'] < 0) {
+        for (int i : record) {
+            if (i != 0) {
                 return false;
             }
         }
-
         return true;
     }
 }
