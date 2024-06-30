@@ -69,7 +69,7 @@ class Solution {
     }
 
     // 初解
-    public int[] intersection(int[] nums1, int[] nums2) {
+    public int[] intersection2(int[] nums1, int[] nums2) {
         HashSet<Integer> set1 = new HashSet<>();
         for (int i : nums1) {
             set1.add(i);
@@ -82,12 +82,59 @@ class Solution {
             }
         }
 
-        int[] num = new int[set.size()];
+        int[] arr = new int[set.size()];
         int index = 0;
         for (int num : set) {
-            num[index++] = num;
+            arr[index++] = num;
         }
-        return num;
+        return arr;
     }
+
+    // 二刷
+    public int[] intersection(int[] nums1, int[] nums2) {
+
+        Set<Integer> set1 = new HashSet<>();
+        Set<Integer> set = new HashSet<>();
+
+
+        for (int i : nums1) {
+            set1.add(i);
+        }
+
+        for (int i : nums2) {
+            if (set1.contains(i)) {
+                set.add(i);
+            }
+        }
+
+        int[] arr = new int[set.size()];
+        int index = 0;
+        for (int i : set) {
+            arr[index++] = i;
+        }
+
+        return arr;
+    }
+
+    // 优解
+    public int[] intersection(int[] nums1, int[] nums2) {
+        int[] hash1 = new int[1002];
+        int[] hash2 = new int[1002];
+        for (int i : nums1)
+            hash1[i]++;
+        for (int i : nums2)
+            hash2[i]++;
+        List<Integer> resList = new ArrayList<>();
+        for (int i = 0; i < 1002; i++)
+            if (hash1[i] > 0 && hash2[i] > 0) {
+                resList.add(i);
+            }
+        int index = 0;
+        int res[] = new int[resList.size()];
+        for (int i : resList)
+            res[index++] = i;
+        return res;
+    }
+
 }
 // leetcode submit region end(Prohibit modification and deletion)
