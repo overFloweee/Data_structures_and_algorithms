@@ -20,7 +20,7 @@
       </schema-mapping>
     </data-source>
     <data-source name="0@47.113.185.207" uuid="cb21c332-e509-45f9-b4a1-ad5ce4b6a6c9">
-      <database-info product="Redis Standalone" version="6.2.6" jdbc-version="4.2" driver-name="Redis JDBC Driver" driver-version="1.4" dbms="REDIS" exact-version="6.2.6" exact-driver-version="1.4" />
+      <database-info product="" version="" jdbc-version="4.2" driver-name="Redis JDBC Driver" driver-version="1.5" dbms="UNKNOWN" exact-version="0" exact-driver-version="1.5" />
       <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
       <secret-storage>master_key</secret-storage>
       <auth-provider>no-auth</auth-provider>
@@ -44,6 +44,23 @@
             <name qname="@" />
             <name qname="reggie" />
             <name qname="shuangxing" />
+          </node>
+        </introspection-scope>
+      </schema-mapping>
+    </data-source>
+    <data-source name="@47.113.185.207 [2]" uuid="b6108030-509d-4a38-bbb7-523927e8ba73">
+      <database-info product="MySQL" version="8.0.35" jdbc-version="4.2" driver-name="MySQL Connector/J" driver-version="mysql-connector-j-8.2.0 (Revision: 06a1f724497fd81c6a659131fda822c9e5085b6c)" dbms="MYSQL" exact-version="8.0.35" exact-driver-version="8.2">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <schema-mapping>
+        <introspection-scope>
+          <node kind="schema">
+            <name qname="@" />
+            <name qname="test" />
           </node>
         </introspection-scope>
       </schema-mapping>
