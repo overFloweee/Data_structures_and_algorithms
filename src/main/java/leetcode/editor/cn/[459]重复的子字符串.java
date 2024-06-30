@@ -45,25 +45,24 @@
 class Solution {
     // 初解
     // 执行耗时:585 ms,击败了5.01% 的Java用户
-    // 内存消耗:44.2 MB,击败了28.15% 的Java用户
+    // 加了一层 if -> 7 ms,击败了82.46% 的Java用户
     public boolean repeatedSubstringPattern1(String s) {
         int n = s.length();
-
         for (int i = 1; i <= n / 2; i++) {
-            String str = s.substring(0, i);
-            boolean flag = true;
-            int len = str.length();
+            if (n % i == 0) {
+                String str = s.substring(0, i);
+                boolean flag = true;
+                for (int j = 0; j < n; j += i) {
+                    if (!str.equals(s.substring(j, j + i))) {
+                        flag = false;
+                        break;
+                    }
 
-            for (int j = 0; j < n; j += len) {
-                int end = Math.min(n, j + len);
-                if (!str.equals(s.substring(j, end))) {
-                    flag = false;
-                    break;
+                }
+                if (flag) {
+                    return true;
                 }
 
-            }
-            if (flag) {
-                return true;
             }
 
         }
@@ -71,39 +70,104 @@ class Solution {
         return false;
     }
 
+    // 初解的优化解
+    // 9 ms,击败了75.04% 的Java用户
+    public boolean repeatedSubstringPattern2(String s) {
+        int n = s.length();
+        for (int i = 1; i * 2 <= n; ++i) {
+            if (n % i == 0) {
+                boolean match = true;
+                for (int j = i; j < n; ++j) {
+                    if (s.charAt(j) != s.charAt(j - i)) {
+                        match = false;
+                        break;
+                    }
+                }
+                if (match) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
     // 好离谱的解
     // 执行耗时:82 ms,击败了38.63% 的Java用户
-    public boolean repeatedSubstringPattern2(String s) {
+    public boolean repeatedSubstringPattern3(String s) {
         String str = s + s;
         return str.substring(1, str.length() - 1).contains(s);
     }
 
 
-    // KMP算法
-    public boolean repeatedSubstringPattern2(String s) {
-
-        int n = s.length();
-        int[] next = getNext(s);
-
-        for (int i = 1; i <= n / 2; i++) {
-            String prefix = s.substring(0, i);
-
-        }
+    // KMP算法 初解
+    // 执行耗时:8 ms,击败了81.03% 的Java用户
+    public boolean repeatedSubstringPattern11(String s) {
+        String str = s + s;
+        return originContainsPartten(str.substring(1, str.length() - 1), s);
 
     }
 
-    // 获取最大相同前后缀 数组
-    public int[] getNext(int[] next, String str) {
+
+    // KMP最优解
+    // 4 ms,击败了99.13% 的Java用户
+    public boolean repeatedSubstringPattern(String s) {
+        int[] next = getPreTable(s.toCharArray());
+        int len = s.length();
+
+        // 最后判断是否是重复的子字符串，这里 next[len] 即代表next数组末尾的值
+        if (next[len - 1] > 0 && len % (len - next[len - 1]) == 0) {
+            return true;
+        }
+        return false;
+    }
+
+    public static boolean originContainsPartten(String s, String parttenStr) {
+        char[] origin = s.toCharArray();
+        char[] partten = parttenStr.toCharArray();
+        int[] preTable = getPreTable(partten);
+
+        int i = 0;
         int j = 0;
-        next[0] = 0;
-        int n = str.length();
+        while (partten.length - j <= origin.length - i) {
+            if (partten[j] == origin[i]) {
+                i++;
+                j++;
+            }
+            else if (j == 0) {
+                i++;
+            }
+            else {
+                j = preTable[j - 1];
+            }
 
-        str.contains() for (int i = 1; i < n; i++) {
-
+            if (j == partten.length) {
+                return true;
+            }
         }
 
-        return;
+        return false;
+    }
 
+    public static int[] getPreTable(char[] partten) {
+        int[] arr = new int[partten.length];
+
+        int i = 1;
+        int j = 0;
+        while (i < partten.length) {
+            if (partten[i] == partten[j]) {
+                arr[i] = j + 1;
+                i++;
+                j++;
+            }
+            else if (j == 0) {
+                i++;
+            }
+            else {
+                j = arr[j - 1];
+            }
+        }
+
+        return arr;
     }
 
 
