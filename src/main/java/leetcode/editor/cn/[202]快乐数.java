@@ -42,6 +42,8 @@
 // Related Topics 哈希表 数学 双指针 👍 1567 👎 0
 
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
 import java.util.HashSet;
 
 // leetcode submit region begin(Prohibit modification and deletion)
@@ -50,29 +52,32 @@ class Solution {
 
         int p1 = n;
         int p2 = n;
-        if (getNext(p2) == 1) {
+        if (getNext(p2) == 1)
+        {
             return true;
         }
-        while (p2 != 1) {
+
+        while (p2 != 1)
+        {
             p1 = getNext(p1);
             p2 = getNext(getNext(p2));
 
-            if (p1 == p2) {
+            if (p1 == p2)
+            {
                 return false;
             }
         }
-
         return true;
     }
 
     public static int getNext(int n) {
-        int sum = 0;
+        int result = 0;
         while (n > 0) {
-            int temp = n % 10;
-            sum += temp * temp;
-            n /= 10;
+            int g = n % 10;
+            result += g * g;
+            n = n / 10;
         }
-        return sum;
+        return result;
     }
 }
 // leetcode submit region end(Prohibit modification and deletion)
