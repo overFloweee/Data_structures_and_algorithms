@@ -718,6 +718,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/[383]赎金信.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/doc/content/[383]赎金信.md" />
+              <option name="frontendQuestionId" value="leetcode.cn383" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/[383]赎金信.java" />
+              <option name="titleSlug" value="ransom-note" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/[430]扁平化多级双向链表.java">
           <value>
             <LeetcodeEditor>
