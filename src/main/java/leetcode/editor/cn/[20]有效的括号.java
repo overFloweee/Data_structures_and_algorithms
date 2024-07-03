@@ -43,46 +43,80 @@
 // Related Topics 栈 字符串 👍 4341 👎 0
 
 
+import java.util.LinkedList;
 import java.util.Stack;
 
 // leetcode submit region begin(Prohibit modification and deletion)
-class Solution
-{
-    public boolean isValid(String s)
-    {
+class Solution {
+    public boolean isValid1(String s) {
 
         Stack<Character> stack = new Stack<>();
         int len = s.length();
-        for (int i = 0; i < len; i++)
-        {
+        for (int i = 0; i < len; i++) {
             char c = s.charAt(i);
-            if (c == '(')
-            {
+            if (c == '(') {
                 stack.push(')');
             }
-            else if (c == '[')
-            {
+            else if (c == '[') {
                 stack.push(']');
             }
-            else if (c == '{')
-            {
+            else if (c == '{') {
                 stack.push('}');
             }
-            else
-            {
+            else {
 
-                if (!stack.isEmpty() && stack.peek() == c)
-                {
+                if (!stack.isEmpty() && stack.peek() == c) {
                     stack.pop();
                 }
-                else
-                {
+                else {
                     return false;
                 }
             }
         }
 
         return stack.isEmpty();
+    }
+
+    public boolean isValid(String s) {
+        LinkedList<Character> stack = new LinkedList<>();
+
+        char[] arr = s.toCharArray();
+
+        if (arr.length % 2 != 0) {
+            return false;
+        }
+
+        for(char c : arr) {
+            if (c == ')') {
+                if (stack.peek() == null || stack.peek() != '(') {
+                    return false;
+                } else {
+                    stack.pop();
+                }
+            } else if (c == '}') {
+                if (stack.peek() == null || stack.peek() != '{') {
+                    return false;
+                } else {
+                    stack.pop();
+                }
+            } else if ( c == ']') {
+                if (stack.peek() == null || stack.peek() != '[') {
+                    return false;
+                } else {
+                    stack.pop();
+                }
+            } else {
+                stack.push(c);
+            }
+        }
+
+        if (!stack.isEmpty()) {
+            return false;
+        }
+
+        LinkedList<Character> stack = new LinkedList<>();
+
+        return true;
     }
 }
 // leetcode submit region end(Prohibit modification and deletion)
