@@ -83,48 +83,69 @@
 import java.util.Stack;
 
 // leetcode submit region begin(Prohibit modification and deletion)
-class Solution
-{
-    public int evalRPN(String[] tokens)
-    {
+class Solution {
+    public int evalRPN(String[] tokens) {
         Stack<Integer> stack = new Stack<>();
 
 
-        for (String token : tokens)
-        {
-            switch (token)
-            {
-                case "+" ->
-                {
+        for (String token : tokens) {
+            switch (token) {
+                case "+" -> {
                     int a1 = stack.pop();
                     int a2 = stack.pop();
                     stack.push(a2 + a1);
                 }
-                case "-" ->
-                {
+                case "-" -> {
                     int a1 = stack.pop();
                     int a2 = stack.pop();
                     stack.push(a2 - a1);
                 }
-                case "*" ->
-                {
+                case "*" -> {
                     int a1 = stack.pop();
                     int a2 = stack.pop();
                     stack.push(a2 * a1);
                 }
-                case "/" ->
-                {
+                case "/" -> {
                     int a1 = stack.pop();
                     int a2 = stack.pop();
                     stack.push(a2 / a1);
                 }
-                default ->
-                {
+                default -> {
                     stack.push(Integer.parseInt(token));
                 }
             }
         }
         return stack.pop();
+    }
+
+    public int evalRPN2(String[] tokens) {
+        Stack<Integer> stack = new Stack<>();
+
+        int sum = 0;
+        for (String token : tokens) {
+            if ("+".equals(token)) {
+                stack.push(stack.pop() + stack.pop());
+            }
+            else if ("-".equals(token)) {
+                Integer pop1 = stack.pop();
+                Integer pop2 = stack.pop();
+                stack.push(pop2 - pop1);
+            }
+            else if ("*".equals(token)) {
+                stack.push(stack.pop() * stack.pop());
+            }
+            else if ("/".equals(token)) {
+                Integer pop1 = stack.pop();
+                Integer pop2 = stack.pop();
+                stack.push(pop2 / pop1);
+            }
+            else {
+                stack.push(Integer.valueOf(token));
+            }
+
+        }
+
+        return stack.peek();
     }
 }
 // leetcode submit region end(Prohibit modification and deletion)
