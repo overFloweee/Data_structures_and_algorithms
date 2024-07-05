@@ -41,16 +41,11 @@
 // Related Topics 队列 数组 滑动窗口 单调队列 堆（优先队列） 👍 2809 👎 0
 
 
-import com.sun.jmx.remote.internal.ArrayQueue;
-
-import java.util.ArrayDeque;
-
 // leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
 
     // 初解 - 没解出来
     public int[] maxSlidingWindow1(int[] nums, int k) {
-
         int n = nums.length;
         int[] arr = new int[n - k + 1];
         int max = Integer.MIN_VALUE;
