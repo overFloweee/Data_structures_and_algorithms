@@ -70,8 +70,6 @@ public class paiang_2024_3_28
         }
 
         return Integer.MAX_VALUE == min ? 0 : min;
-
-
     }
 
     // 初解 超时
