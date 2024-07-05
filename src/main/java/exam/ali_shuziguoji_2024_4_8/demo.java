@@ -38,9 +38,7 @@ public class demo
                 v[i] = true;
                 q = arr[i];
             }
-
         }
-
 
         System.out.println(Arrays.toString(arr));
     }
