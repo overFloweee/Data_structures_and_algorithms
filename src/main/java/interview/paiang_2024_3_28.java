@@ -42,12 +42,9 @@ public class paiang_2024_3_28
                 p1++;
             }
             p2++;
-
         }
 
         return Integer.MAX_VALUE == min ? 0 : min;
-
-
     }
 
 
