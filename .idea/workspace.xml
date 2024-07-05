@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e1fe7745-aaf7-47e2-955b-8388cc84bcec" name="更改" comment="刷题">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b6108030-509d-4a38-bbb7-523927e8ba73.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b6108030-509d-4a38-bbb7-523927e8ba73.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/leetcode/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/leetcode/editor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/leetcode/statistics.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/leetcode/statistics.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/[LCR 036]逆波兰表达式求值.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/[LCR 036]逆波兰表达式求值.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/[121]买卖股票的最佳时机.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/[121]买卖股票的最佳时机.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -336,62 +335,11 @@
       <workItem from="1720019282910" duration="73000" />
       <workItem from="1720019365596" duration="169000" />
       <workItem from="1720019549198" duration="115000" />
-    </task>
-    <task id="LOCAL-00052" summary="刷题">
-      <option name="closed" value="true" />
-      <created>1717427739317</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1717427739317</updated>
-    </task>
-    <task id="LOCAL-00053" summary="刷题">
-      <option name="closed" value="true" />
-      <created>1717427753510</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1717427753510</updated>
-    </task>
-    <task id="LOCAL-00054" summary="刷题">
-      <option name="closed" value="true" />
-      <created>1717427777101</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1717427777102</updated>
-    </task>
-    <task id="LOCAL-00055" summary="刷题">
-      <option name="closed" value="true" />
-      <created>1717510209725</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1717510209726</updated>
-    </task>
-    <task id="LOCAL-00056" summary="刷题">
-      <option name="closed" value="true" />
-      <created>1717592082697</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1717592082697</updated>
-    </task>
-    <task id="LOCAL-00057" summary="刷题">
-      <option name="closed" value="true" />
-      <created>1717592124832</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1717592124832</updated>
-    </task>
-    <task id="LOCAL-00058" summary="刷题">
-      <option name="closed" value="true" />
-      <created>1717593671606</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1717593671606</updated>
+      <workItem from="1720019680683" duration="192000" />
+      <workItem from="1720067202059" duration="11000" />
+      <workItem from="1720099306621" duration="665000" />
+      <workItem from="1720100607125" duration="3625000" />
+      <workItem from="1720183992382" duration="5349000" />
     </task>
     <task id="LOCAL-00059" summary="刷题">
       <option name="closed" value="true" />
@@ -729,7 +677,63 @@
       <option name="project" value="LOCAL" />
       <updated>1720019125078</updated>
     </task>
-    <option name="localTasksCounter" value="101" />
+    <task id="LOCAL-00101" summary="刷题">
+      <option name="closed" value="true" />
+      <created>1720019766528</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1720019766528</updated>
+    </task>
+    <task id="LOCAL-00102" summary="刷题">
+      <option name="closed" value="true" />
+      <created>1720019791321</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1720019791322</updated>
+    </task>
+    <task id="LOCAL-00103" summary="刷题">
+      <option name="closed" value="true" />
+      <created>1720019804556</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1720019804556</updated>
+    </task>
+    <task id="LOCAL-00104" summary="刷题">
+      <option name="closed" value="true" />
+      <created>1720019818789</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1720019818789</updated>
+    </task>
+    <task id="LOCAL-00105" summary="刷题">
+      <option name="closed" value="true" />
+      <created>1720019838489</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1720019838489</updated>
+    </task>
+    <task id="LOCAL-00106" summary="刷题">
+      <option name="closed" value="true" />
+      <created>1720019852857</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1720019852858</updated>
+    </task>
+    <task id="LOCAL-00107" summary="刷题">
+      <option name="closed" value="true" />
+      <created>1720105745210</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1720105745210</updated>
+    </task>
+    <option name="localTasksCounter" value="108" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
