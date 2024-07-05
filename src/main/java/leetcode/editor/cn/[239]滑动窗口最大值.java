@@ -73,6 +73,7 @@ class Solution {
         return arr;
     }
 
+    // 优解
     public int[] maxSlidingWindow(int[] nums, int k) {
         int n = nums.length;
 
@@ -98,6 +99,5 @@ class Solution {
         }
         return res;
     }
-
 }
 // leetcode submit region end(Prohibit modification and deletion)
