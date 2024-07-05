@@ -1,0 +1,495 @@
+Index: src/main/java/leetcode/editor/cn/doc/content/[215]数组中的第K个最大元素.md
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/leetcode/editor/cn/doc/content/[215]数组中的第K个最大元素.md b/src/main/java/leetcode/editor/cn/doc/content/[215]数组中的第K个最大元素.md
+new file mode 100644
+--- /dev/null	(date 1720194571916)
++++ b/src/main/java/leetcode/editor/cn/doc/content/[215]数组中的第K个最大元素.md	(date 1720194571916)
+@@ -0,0 +1,31 @@
++<p>给定整数数组 <code>nums</code> 和整数 <code>k</code>，请返回数组中第 <code><strong>k</strong></code> 个最大的元素。</p>
++
++<p>请注意，你需要找的是数组排序后的第 <code>k</code> 个最大的元素，而不是第 <code>k</code> 个不同的元素。</p>
++
++<p>你必须设计并实现时间复杂度为 <code>O(n)</code> 的算法解决此问题。</p>
++
++<p>&nbsp;</p>
++
++<p><strong>示例 1:</strong></p>
++
++<pre>
++<strong>输入:</strong> <span><code>[3,2,1,5,6,4],</code></span> k = 2
++<strong>输出:</strong> 5
++</pre>
++
++<p><strong>示例&nbsp;2:</strong></p>
++
++<pre>
++<strong>输入:</strong> <span><code>[3,2,3,1,2,4,5,5,6], </code></span>k = 4
++<strong>输出:</strong> 4</pre>
++
++<p>&nbsp;</p>
++
++<p><strong>提示： </strong></p>
++
++<ul> 
++ <li><code>1 &lt;= k &lt;= nums.length &lt;= 10<sup>5</sup></code></li> 
++ <li><code>-10<sup>4</sup>&nbsp;&lt;= nums[i] &lt;= 10<sup>4</sup></code></li> 
++</ul>
++
++<div><div>Related Topics</div><div><li>数组</li><li>分治</li><li>快速选择</li><li>排序</li><li>堆（优先队列）</li></div></div><br><div><li>👍 2491</li><li>👎 0</li></div>
+Index: src/main/java/leetcode/editor/cn/doc/content/[LCR 016]无重复字符的最长子串.md
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/leetcode/editor/cn/doc/content/[LCR 016]无重复字符的最长子串.md b/src/main/java/leetcode/editor/cn/doc/content/[LCR 016]无重复字符的最长子串.md
+new file mode 100644
+--- /dev/null	(date 1720194571923)
++++ b/src/main/java/leetcode/editor/cn/doc/content/[LCR 016]无重复字符的最长子串.md	(date 1720194571923)
+@@ -0,0 +1,51 @@
++<p>给定一个字符串 <code>s</code> ，请你找出其中不含有重复字符的&nbsp;<strong>最长连续子字符串&nbsp;</strong>的长度。</p>
++
++<p>&nbsp;</p>
++
++<p><strong>示例&nbsp;1:</strong></p>
++
++<pre>
++<strong>输入: </strong>s = "abcabcbb"
++<strong>输出: </strong>3 
++<strong>解释:</strong> 因为无重复字符的最长子字符串是 <span><code>"abc"，所以其</code></span>长度为 3。
++</pre>
++
++<p><strong>示例 2:</strong></p>
++
++<pre>
++<strong>输入: </strong>s = "bbbbb"
++<strong>输出: </strong>1
++<strong>解释: </strong>因为无重复字符的最长子字符串是 <span><code>"b"</code></span>，所以其长度为 1。
++</pre>
++
++<p><strong>示例 3:</strong></p>
++
++<pre>
++<strong>输入: </strong>s = "pwwkew"
++<strong>输出: </strong>3
++<strong>解释: </strong>因为无重复字符的最长子串是&nbsp;<span><code>"wke"</code></span>，所以其长度为 3。
++&nbsp;    请注意，你的答案必须是 <strong>子串 </strong>的长度，<span><code>"pwke"</code></span>&nbsp;是一个<em>子序列，</em>不是子串。
++</pre>
++
++<p><strong>示例 4:</strong></p>
++
++<pre>
++<strong>输入: </strong>s = ""
++<strong>输出: </strong>0
++</pre>
++
++<p>&nbsp;</p>
++
++<p><strong>提示：</strong></p>
++
++<ul> 
++ <li><code>0 &lt;= s.length &lt;= 5 * 10<sup>4</sup></code></li> 
++ <li><code>s</code>&nbsp;由英文字母、数字、符号和空格组成</li> 
++</ul>
++
++<p>&nbsp;</p>
++
++<p>
++ <meta charset="UTF-8" />注意：本题与主站 3&nbsp;题相同：&nbsp;<a href="https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/">https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/</a></p>
++
++<div><div>Related Topics</div><div><li>哈希表</li><li>字符串</li><li>滑动窗口</li></div></div><br><div><li>👍 110</li><li>👎 0</li></div>
+Index: src/main/java/leetcode/editor/cn/[LCR 060]前 K 个高频元素.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/leetcode/editor/cn/[LCR 060]前 K 个高频元素.java b/src/main/java/leetcode/editor/cn/[LCR 060]前 K 个高频元素.java
+new file mode 100644
+--- /dev/null	(date 1720194571942)
++++ b/src/main/java/leetcode/editor/cn/[LCR 060]前 K 个高频元素.java	(date 1720194571942)
+@@ -0,0 +1,48 @@
++// 给定一个整数数组 nums 和一个整数 k ，请返回其中出现频率前 k 高的元素。可以按 任意顺序 返回答案。
++//
++//
++//
++// 示例 1:
++//
++//
++// 输入: nums = [1,1,1,2,2,3], k = 2
++// 输出: [1,2]
++//
++//
++// 示例 2:
++//
++//
++// 输入: nums = [1], k = 1
++// 输出: [1]
++//
++//
++//
++// 提示：
++//
++//
++// 1 <= nums.length <= 10⁵
++// k 的取值范围是 [1, 数组中不相同的元素的个数]
++// 题目数据保证答案唯一，换句话说，数组中前 k 个高频元素的集合是唯一的
++//
++//
++//
++//
++// 进阶：所设计算法的时间复杂度 必须 优于 O(n log n) ，其中 n 是数组大小。
++//
++//
++//
++//
++// 注意：本题与主站 347 题相同：https://leetcode-cn.com/problems/top-k-frequent-elements/
++//
++// Related Topics 数组 哈希表 分治 桶排序 计数 快速选择 排序 堆（优先队列） 👍 70 👎 0
++
++
++import java.util.ArrayDeque;
++
++// leetcode submit region begin(Prohibit modification and deletion)
++class Solution {
++    public int[] topKFrequent(int[] nums, int k) {
++
++    }
++}
++// leetcode submit region end(Prohibit modification and deletion)
+Index: src/main/java/leetcode/editor/cn/[121]买卖股票的最佳时机.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>// 给定一个数组 prices ，它的第 i 个元素 prices[i] 表示一支给定股票第 i 天的价格。\r\n//\r\n// 你只能选择 某一天 买入这只股票，并选择在 未来的某一个不同的日子 卖出该股票。设计一个算法来计算你所能获取的最大利润。\r\n//\r\n// 返回你可以从这笔交易中获取的最大利润。如果你不能获取任何利润，返回 0 。\r\n//\r\n//\r\n//\r\n// 示例 1：\r\n//\r\n//\r\n// 输入：[7,1,5,3,6,4]\r\n// 输出：5\r\n// 解释：在第 2 天（股票价格 = 1）的时候买入，在第 5 天（股票价格 = 6）的时候卖出，最大利润 = 6-1 = 5 。\r\n//     注意利润不能是 7-1 = 6, 因为卖出价格需要大于买入价格；同时，你不能在买入前卖出股票。\r\n//\r\n//\r\n// 示例 2：\r\n//\r\n//\r\n// 输入：prices = [7,6,4,3,1]\r\n// 输出：0\r\n// 解释：在这种情况下, 没有交易完成, 所以最大利润为 0。\r\n//\r\n//\r\n//\r\n//\r\n// 提示：\r\n//\r\n//\r\n// 1 <= prices.length <= 10⁵\r\n// 0 <= prices[i] <= 10⁴\r\n//\r\n//\r\n// Related Topics 数组 动态规划 \uD83D\uDC4D 3457 \uD83D\uDC4E 0\r\n\r\n\r\n// leetcode submit region begin(Prohibit modification and deletion)\r\nclass Solution\r\n{\r\n    public int maxProfit(int[] prices)\r\n    {\r\n\r\n        int min = Integer.MAX_VALUE;\r\n        int max = 0;\r\n        for (int i = 0; i < prices.length; i++)\r\n        {\r\n            if (prices[i] < min)\r\n            {\r\n                min = prices[i];\r\n            }\r\n            else\r\n            {\r\n                int temp = prices[i] - min;\r\n                if (max < temp)\r\n                {\r\n                    max = temp;\r\n                }\r\n            }\r\n        }\r\n        return max;\r\n\r\n    }\r\n}\r\n// leetcode submit region end(Prohibit modification and deletion)\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/leetcode/editor/cn/[121]买卖股票的最佳时机.java b/src/main/java/leetcode/editor/cn/[121]买卖股票的最佳时机.java
+--- a/src/main/java/leetcode/editor/cn/[121]买卖股票的最佳时机.java	(revision ecbcd682b3b6b669b6852fc72e5cccaba41cd9d1)
++++ b/src/main/java/leetcode/editor/cn/[121]买卖股票的最佳时机.java	(date 1720194571934)
+@@ -36,30 +36,46 @@
+ 
+ 
+ // leetcode submit region begin(Prohibit modification and deletion)
+-class Solution
+-{
+-    public int maxProfit(int[] prices)
+-    {
++class Solution {
++    public int maxProfit1(int[] prices) {
++
++        int min = Integer.MAX_VALUE;
++        int max = 0;
++        for (int i = 0; i < prices.length; i++) {
++            if (prices[i] < min) {
++                min = prices[i];
++            }
++            else {
++                int temp = prices[i] - min;
++                if (max < temp) {
++                    max = temp;
++                }
++            }
++        }
++        return max;
+ 
++    }
++
++    // 二刷
++    public int maxProfit(int[] prices) {
+         int min = Integer.MAX_VALUE;
+         int max = 0;
+-        for (int i = 0; i < prices.length; i++)
+-        {
+-            if (prices[i] < min)
+-            {
++        int n = prices.length;
++        for (int i = 0; i < n; i++) {
++            // 获取到最小值
++            if (prices[i] < min) {
+                 min = prices[i];
+             }
+-            else
+-            {
++            else {
++                // 获取到最大值：后续元素与最小值的差值 的最大值
+                 int temp = prices[i] - min;
+-                if (max < temp)
+-                {
++                if (temp > max) {
+                     max = temp;
+                 }
+             }
+         }
++
+         return max;
+-
+     }
+ }
+ // leetcode submit region end(Prohibit modification and deletion)
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"e1fe7745-aaf7-47e2-955b-8388cc84bcec\" name=\"更改\" comment=\"刷题\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/leetcode/editor.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/leetcode/editor.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/leetcode/statistics.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/leetcode/statistics.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/leetcode/editor/cn/[121]买卖股票的最佳时机.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/leetcode/editor/cn/[121]买卖股票的最佳时机.java\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"MavenImportPreferences\">\r\n    <option name=\"generalSettings\">\r\n      <MavenGeneralSettings>\r\n        <option name=\"localRepository\" value=\"G:\\JAVA\\apache-maven-3.8.7-bin\\maven\\repository\" />\r\n        <option name=\"mavenHome\" value=\"$PROJECT_DIR$/../../apache-maven-3.8.7-bin/apache-maven-3.8.7\" />\r\n        <option name=\"useMavenConfig\" value=\"false\" />\r\n        <option name=\"userSettingsFile\" value=\"G:\\JAVA\\apache-maven-3.8.7-bin\\apache-maven-3.8.7\\conf\\settings.xml\" />\r\n      </MavenGeneralSettings>\r\n    </option>\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 8\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2YKqmjdMaUWFCq4CLRNFqtXEFGT\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"autoscrollToSource\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\r\n    &quot;database.data.extractors.current.export.id&quot;: &quot;SQL 插入&quot;,\r\n    &quot;git-widget-placeholder&quot;: &quot;master&quot;,\r\n    &quot;last_opened_file_path&quot;: &quot;G:/JAVA/Competition/Evergreen-recruitment&quot;,\r\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,\r\n    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,\r\n    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,\r\n    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,\r\n    &quot;settings.editor.selected.configurable&quot;: &quot;application.passwordSafe&quot;,\r\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\r\n  },\r\n  &quot;keyToStringList&quot;: {\r\n    &quot;DatabaseDriversLRU&quot;: [\r\n      &quot;redis&quot;,\r\n      &quot;mysql&quot;\r\n    ]\r\n  }\r\n}</component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"G:\\JAVA\\project1\\Data_structures_and_algorithms\\src\\main\\java\\demo\" />\r\n    </key>\r\n    <key name=\"CopyClassDialog.RECENTS_KEY\">\r\n      <recent name=\"practice\" />\r\n      <recent name=\"study\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"应用程序.demo\">\r\n    <configuration name=\"零矩阵\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"practice.零矩阵\" />\r\n      <module name=\"Data_structures_and_algorithms\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"practice.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"Main\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"Main\" />\r\n      <module name=\"Data_structures_and_algorithms\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"demo\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"demo\" />\r\n      <module name=\"Data_structures_and_algorithms\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"exam.Main\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"exam.Main\" />\r\n      <module name=\"Data_structures_and_algorithms\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"exam.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"test1\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"demo.test1\" />\r\n      <module name=\"Data_structures_and_algorithms\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"demo.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"应用程序.demo\" />\r\n        <item itemvalue=\"应用程序.Main\" />\r\n        <item itemvalue=\"应用程序.test1\" />\r\n        <item itemvalue=\"应用程序.exam.Main\" />\r\n        <item itemvalue=\"应用程序.零矩阵\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"应用程序级\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"默认任务\">\r\n      <changelist id=\"e1fe7745-aaf7-47e2-955b-8388cc84bcec\" name=\"更改\" comment=\"\" />\r\n      <created>1700284780794</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1700284780794</updated>\r\n      <workItem from=\"1700284781822\" duration=\"4681000\" />\r\n      <workItem from=\"1700371847525\" duration=\"7000\" />\r\n      <workItem from=\"1700637674772\" duration=\"866000\" />\r\n      <workItem from=\"1700645143353\" duration=\"603000\" />\r\n      <workItem from=\"1700730486912\" duration=\"8394000\" />\r\n      <workItem from=\"1700796188258\" duration=\"6200000\" />\r\n      <workItem from=\"1700883690629\" duration=\"6295000\" />\r\n      <workItem from=\"1700969375204\" duration=\"4512000\" />\r\n      <workItem from=\"1700998349333\" duration=\"3216000\" />\r\n      <workItem from=\"1701093472650\" duration=\"139000\" />\r\n      <workItem from=\"1701093622111\" duration=\"4148000\" />\r\n      <workItem from=\"1701136132739\" duration=\"7781000\" />\r\n      <workItem from=\"1701244405432\" duration=\"4517000\" />\r\n      <workItem from=\"1701259936261\" duration=\"11000\" />\r\n      <workItem from=\"1701260888024\" duration=\"646000\" />\r\n      <workItem from=\"1701333034725\" duration=\"12000\" />\r\n      <workItem from=\"1702008226223\" duration=\"79000\" />\r\n      <workItem from=\"1702008318827\" duration=\"7240000\" />\r\n      <workItem from=\"1702033741801\" duration=\"12000\" />\r\n      <workItem from=\"1702101931204\" duration=\"9994000\" />\r\n      <workItem from=\"1702179297273\" duration=\"7982000\" />\r\n      <workItem from=\"1702541132537\" duration=\"8172000\" />\r\n      <workItem from=\"1702619875061\" duration=\"9274000\" />\r\n      <workItem from=\"1702635198248\" duration=\"6539000\" />\r\n      <workItem from=\"1702648901034\" duration=\"6000\" />\r\n      <workItem from=\"1702825031797\" duration=\"1175000\" />\r\n      <workItem from=\"1702875773942\" duration=\"3000\" />\r\n      <workItem from=\"1707207088314\" duration=\"7943000\" />\r\n      <workItem from=\"1707284947357\" duration=\"7641000\" />\r\n      <workItem from=\"1707314245471\" duration=\"8000\" />\r\n      <workItem from=\"1707486661468\" duration=\"2798000\" />\r\n      <workItem from=\"1707559158072\" duration=\"1915000\" />\r\n      <workItem from=\"1707716522277\" duration=\"221000\" />\r\n      <workItem from=\"1707716903970\" duration=\"1476000\" />\r\n      <workItem from=\"1708065434872\" duration=\"6032000\" />\r\n      <workItem from=\"1708320771857\" duration=\"2124000\" />\r\n      <workItem from=\"1708406083299\" duration=\"16000\" />\r\n      <workItem from=\"1708825232405\" duration=\"4901000\" />\r\n      <workItem from=\"1709013971235\" duration=\"4000\" />\r\n      <workItem from=\"1709014713932\" duration=\"7000\" />\r\n      <workItem from=\"1709106144831\" duration=\"4524000\" />\r\n      <workItem from=\"1709221265832\" duration=\"1596000\" />\r\n      <workItem from=\"1709277081126\" duration=\"11000\" />\r\n      <workItem from=\"1709278618490\" duration=\"823000\" />\r\n      <workItem from=\"1709291902423\" duration=\"4000\" />\r\n      <workItem from=\"1709293103268\" duration=\"149000\" />\r\n      <workItem from=\"1709293262375\" duration=\"5147000\" />\r\n      <workItem from=\"1709355676326\" duration=\"21000\" />\r\n      <workItem from=\"1709443295886\" duration=\"390000\" />\r\n      <workItem from=\"1709444096202\" duration=\"2108000\" />\r\n      <workItem from=\"1709468836354\" duration=\"6000\" />\r\n      <workItem from=\"1709539110406\" duration=\"4868000\" />\r\n      <workItem from=\"1709604253546\" duration=\"6350000\" />\r\n      <workItem from=\"1709626712829\" duration=\"916000\" />\r\n      <workItem from=\"1709704821231\" duration=\"1915000\" />\r\n      <workItem from=\"1709716297860\" duration=\"12000\" />\r\n      <workItem from=\"1709739264399\" duration=\"2000\" />\r\n      <workItem from=\"1709983356321\" duration=\"1564000\" />\r\n      <workItem from=\"1710222940522\" duration=\"1218000\" />\r\n      <workItem from=\"1710253588829\" duration=\"7000\" />\r\n      <workItem from=\"1710826252329\" duration=\"5194000\" />\r\n      <workItem from=\"1710848825497\" duration=\"1611000\" />\r\n      <workItem from=\"1711091004543\" duration=\"64000\" />\r\n      <workItem from=\"1711091082808\" duration=\"1950000\" />\r\n      <workItem from=\"1711115263930\" duration=\"3021000\" />\r\n      <workItem from=\"1711164120761\" duration=\"655000\" />\r\n      <workItem from=\"1711259239745\" duration=\"4439000\" />\r\n      <workItem from=\"1711266383653\" duration=\"23000\" />\r\n      <workItem from=\"1711717694964\" duration=\"1717000\" />\r\n      <workItem from=\"1711764696039\" duration=\"24000\" />\r\n      <workItem from=\"1711983204311\" duration=\"688000\" />\r\n      <workItem from=\"1712024026296\" duration=\"6491000\" />\r\n      <workItem from=\"1712037779232\" duration=\"23000\" />\r\n      <workItem from=\"1712058173700\" duration=\"1332000\" />\r\n      <workItem from=\"1712069083926\" duration=\"3019000\" />\r\n      <workItem from=\"1712203389170\" duration=\"812000\" />\r\n      <workItem from=\"1712210505686\" duration=\"2096000\" />\r\n      <workItem from=\"1712212616213\" duration=\"212000\" />\r\n      <workItem from=\"1712242416179\" duration=\"3813000\" />\r\n      <workItem from=\"1712283642955\" duration=\"5807000\" />\r\n      <workItem from=\"1712301519060\" duration=\"5000\" />\r\n      <workItem from=\"1712412427470\" duration=\"101000\" />\r\n      <workItem from=\"1712412534735\" duration=\"25000\" />\r\n      <workItem from=\"1712412577045\" duration=\"2221000\" />\r\n      <workItem from=\"1712453931746\" duration=\"8321000\" />\r\n      <workItem from=\"1712572279667\" duration=\"5357000\" />\r\n      <workItem from=\"1712587453699\" duration=\"2032000\" />\r\n      <workItem from=\"1712629567737\" duration=\"12000\" />\r\n      <workItem from=\"1712669921042\" duration=\"2460000\" />\r\n      <workItem from=\"1712675289412\" duration=\"10000\" />\r\n      <workItem from=\"1712760090638\" duration=\"2620000\" />\r\n      <workItem from=\"1712803219971\" duration=\"594000\" />\r\n      <workItem from=\"1712805530786\" duration=\"398000\" />\r\n      <workItem from=\"1712814542383\" duration=\"2706000\" />\r\n      <workItem from=\"1712826627492\" duration=\"1095000\" />\r\n      <workItem from=\"1712969587710\" duration=\"179000\" />\r\n      <workItem from=\"1713366417809\" duration=\"47000\" />\r\n      <workItem from=\"1713406960947\" duration=\"3674000\" />\r\n      <workItem from=\"1713417877983\" duration=\"5443000\" />\r\n      <workItem from=\"1713436864363\" duration=\"8000\" />\r\n      <workItem from=\"1713449303893\" duration=\"2750000\" />\r\n      <workItem from=\"1713498649121\" duration=\"654000\" />\r\n      <workItem from=\"1713580240059\" duration=\"444000\" />\r\n      <workItem from=\"1713703520566\" duration=\"150000\" />\r\n      <workItem from=\"1713765162499\" duration=\"853000\" />\r\n      <workItem from=\"1713798462512\" duration=\"139000\" />\r\n      <workItem from=\"1713878827598\" duration=\"57000\" />\r\n      <workItem from=\"1713967365048\" duration=\"5000\" />\r\n      <workItem from=\"1714140970946\" duration=\"28000\" />\r\n      <workItem from=\"1714312070134\" duration=\"712000\" />\r\n      <workItem from=\"1714911655693\" duration=\"5107000\" />\r\n      <workItem from=\"1714917660705\" duration=\"28000\" />\r\n      <workItem from=\"1715003341913\" duration=\"4980000\" />\r\n      <workItem from=\"1715088453997\" duration=\"5831000\" />\r\n      <workItem from=\"1715094303516\" duration=\"634000\" />\r\n      <workItem from=\"1715178751397\" duration=\"7000\" />\r\n      <workItem from=\"1715261269691\" duration=\"5383000\" />\r\n      <workItem from=\"1715346004315\" duration=\"7000\" />\r\n      <workItem from=\"1715347748515\" duration=\"4248000\" />\r\n      <workItem from=\"1715442738425\" duration=\"51000\" />\r\n      <workItem from=\"1715442803971\" duration=\"65000\" />\r\n      <workItem from=\"1715479753344\" duration=\"16416000\" />\r\n      <workItem from=\"1715695537792\" duration=\"4942000\" />\r\n      <workItem from=\"1715779417510\" duration=\"5405000\" />\r\n      <workItem from=\"1715869443875\" duration=\"520000\" />\r\n      <workItem from=\"1715869979251\" duration=\"2081000\" />\r\n      <workItem from=\"1716001819704\" duration=\"357000\" />\r\n      <workItem from=\"1716002190188\" duration=\"2882000\" />\r\n      <workItem from=\"1716039623709\" duration=\"391000\" />\r\n      <workItem from=\"1716040243656\" duration=\"2365000\" />\r\n      <workItem from=\"1716093851325\" duration=\"116000\" />\r\n      <workItem from=\"1716093983672\" duration=\"7622000\" />\r\n      <workItem from=\"1716208831433\" duration=\"330000\" />\r\n      <workItem from=\"1716209179877\" duration=\"3062000\" />\r\n      <workItem from=\"1716473047842\" duration=\"471000\" />\r\n      <workItem from=\"1716702692738\" duration=\"2296000\" />\r\n      <workItem from=\"1716817925359\" duration=\"19000\" />\r\n      <workItem from=\"1716820107057\" duration=\"41000\" />\r\n      <workItem from=\"1716820159790\" duration=\"41000\" />\r\n      <workItem from=\"1716820217923\" duration=\"3221000\" />\r\n      <workItem from=\"1716901918821\" duration=\"3200000\" />\r\n      <workItem from=\"1716989589251\" duration=\"5320000\" />\r\n      <workItem from=\"1717209667976\" duration=\"2664000\" />\r\n      <workItem from=\"1717248266905\" duration=\"1128000\" />\r\n      <workItem from=\"1717295021010\" duration=\"16872000\" />\r\n      <workItem from=\"1717423773346\" duration=\"4025000\" />\r\n      <workItem from=\"1717510167190\" duration=\"3247000\" />\r\n      <workItem from=\"1717591492014\" duration=\"6483000\" />\r\n      <workItem from=\"1717679360630\" duration=\"3565000\" />\r\n      <workItem from=\"1717810827839\" duration=\"6920000\" />\r\n      <workItem from=\"1717900071151\" duration=\"9732000\" />\r\n      <workItem from=\"1717986740626\" duration=\"6445000\" />\r\n      <workItem from=\"1717993577308\" duration=\"246000\" />\r\n      <workItem from=\"1717993839888\" duration=\"177000\" />\r\n      <workItem from=\"1717994073972\" duration=\"63000\" />\r\n      <workItem from=\"1717994153400\" duration=\"4205000\" />\r\n      <workItem from=\"1718110630794\" duration=\"4301000\" />\r\n      <workItem from=\"1718199569956\" duration=\"943000\" />\r\n      <workItem from=\"1718252516776\" duration=\"34000\" />\r\n      <workItem from=\"1719230954917\" duration=\"651000\" />\r\n      <workItem from=\"1719324802450\" duration=\"2859000\" />\r\n      <workItem from=\"1719410758953\" duration=\"4690000\" />\r\n      <workItem from=\"1719497120538\" duration=\"3832000\" />\r\n      <workItem from=\"1719578999038\" duration=\"19000\" />\r\n      <workItem from=\"1719632005966\" duration=\"509000\" />\r\n      <workItem from=\"1719632525075\" duration=\"8808000\" />\r\n      <workItem from=\"1719663299559\" duration=\"81000\" />\r\n      <workItem from=\"1719663392186\" duration=\"67000\" />\r\n      <workItem from=\"1719663482093\" duration=\"4223000\" />\r\n      <workItem from=\"1719713995875\" duration=\"186000\" />\r\n      <workItem from=\"1719714228154\" duration=\"1125000\" />\r\n      <workItem from=\"1719754239579\" duration=\"116000\" />\r\n      <workItem from=\"1719754371508\" duration=\"184000\" />\r\n      <workItem from=\"1719754569337\" duration=\"145000\" />\r\n      <workItem from=\"1719754726431\" duration=\"4063000\" />\r\n      <workItem from=\"1719842816918\" duration=\"255000\" />\r\n      <workItem from=\"1719843086137\" duration=\"2088000\" />\r\n      <workItem from=\"1719929106073\" duration=\"3292000\" />\r\n      <workItem from=\"1720011590812\" duration=\"5278000\" />\r\n      <workItem from=\"1720019282910\" duration=\"73000\" />\r\n      <workItem from=\"1720019365596\" duration=\"169000\" />\r\n      <workItem from=\"1720019549198\" duration=\"115000\" />\r\n      <workItem from=\"1720019680683\" duration=\"192000\" />\r\n      <workItem from=\"1720067202059\" duration=\"11000\" />\r\n      <workItem from=\"1720099306621\" duration=\"665000\" />\r\n      <workItem from=\"1720100607125\" duration=\"3625000\" />\r\n      <workItem from=\"1720183992382\" duration=\"5349000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00059\" summary=\"刷题\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1717593997251</created>\r\n      <option name=\"number\" value=\"00059\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00059\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1717593997251</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00060\" summary=\"刷题\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1717598879024</created>\r\n      <option name=\"number\" value=\"00060\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00060\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1717598879024</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00061\" summary=\"刷题\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1717598908017</created>\r\n      <option name=\"number\" value=\"00061\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00061\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1717598908017</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00062\" summary=\"刷题\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1717598925488</created>\r\n      <option name=\"number\" value=\"00062\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00062\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1717598925488</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00063\" summary=\"刷题\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1717679614951</created>\r\n      <option name=\"number\" value=\"00063\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00063\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1717679614951</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00064\" summary=\"刷题\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1717812042526</created>\r\n      <option name=\"number\" value=\"00064\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00064\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1717812042527</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00065\" summary=\"刷题\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1717856763647</created>\r\n      <option name=\"number\" value=\"00065\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00065\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1717856763647</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00066\" summary=\"刷题\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1717904618433</created>\r\n      <option name=\"number\" value=\"00066\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00066\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1717904618433</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00067\" summary=\"刷题\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1717987902620</created>\r\n      <option name=\"number\" value=\"00067\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00067\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1717987902620</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00068\" summary=\"刷题\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1717993667740</created>\r\n      <option name=\"number\" value=\"00068\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00068\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1717993667740</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00069\" summary=\"刷题\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1717993874705</created>\r\n      <option name=\"number\" value=\"00069\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00069\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1717993874705</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00070\" summary=\"刷题\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1718020924164</created>\r\n      <option name=\"number\" value=\"00070\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00070\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1718020924165</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00071\" summary=\"刷题\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1718111065532</created>\r\n      <option name=\"number\" value=\"00071\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00071\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1718111065533</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00072\" summary=\"刷题\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1718111085271</created>\r\n      <option name=\"number\" value=\"00072\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00072\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1718111085271</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00073\" summary=\"刷题\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1718111098150</created>\r\n      <option name=\"number\" value=\"00073\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00073\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1718111098150</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00074\" summary=\"刷题\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1718111111189</created>\r\n      <option name=\"number\" value=\"00074\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00074\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1718111111190</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00075\" summary=\"刷题\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1718111128853</created>\r\n      <option name=\"number\" value=\"00075\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00075\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1718111128853</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00076\" summary=\"刷题\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1718111154624</created>\r\n      <option name=\"number\" value=\"00076\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00076\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1718111154624</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00077\" summary=\"刷题\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1718111177435</created>\r\n      <option name=\"number\" value=\"00077\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00077\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1718111177435</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00078\" summary=\"刷题\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1719230982547</created>\r\n      <option name=\"number\" value=\"00078\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00078\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1719230982547</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00079\" summary=\"刷题\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1719329160159</created>\r\n      <option name=\"number\" value=\"00079\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00079\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1719329160159</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00080\" summary=\"刷题\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1719412681105</created>\r\n      <option name=\"number\" value=\"00080\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00080\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1719412681106</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00081\" summary=\"刷题\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1719414071761</created>\r\n      <option name=\"number\" value=\"00081\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00081\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1719414071761</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00082\" summary=\"刷题\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1719414149603</created>\r\n      <option name=\"number\" value=\"00082\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00082\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1719414149603</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00083\" summary=\"刷题\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1719414918723</created>\r\n      <option name=\"number\" value=\"00083\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00083\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1719414918723</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00084\" summary=\"刷题\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1719414980739</created>\r\n      <option name=\"number\" value=\"00084\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00084\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1719414980739</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00085\" summary=\"刷题\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1719415015465</created>\r\n      <option name=\"number\" value=\"00085\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00085\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1719415015465</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00086\" summary=\"刷题\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1719415044887</created>\r\n      <option name=\"number\" value=\"00086\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00086\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1719415044887</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00087\" summary=\"刷题\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1719501049967</created>\r\n      <option name=\"number\" value=\"00087\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00087\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1719501049967</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00088\" summary=\"刷题\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1719663178116</created>\r\n      <option name=\"number\" value=\"00088\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00088\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1719663178116</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00089\" summary=\"刷题\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1719713905885</created>\r\n      <option name=\"number\" value=\"00089\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00089\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1719713905886</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00090\" summary=\"刷题\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1719758798420</created>\r\n      <option name=\"number\" value=\"00090\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00090\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1719758798421</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00091\" summary=\"刷题\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1719758819548</created>\r\n      <option name=\"number\" value=\"00091\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00091\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1719758819548</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00092\" summary=\"刷题\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1719758833621</created>\r\n      <option name=\"number\" value=\"00092\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00092\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1719758833621</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00093\" summary=\"刷题\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1719758847647</created>\r\n      <option name=\"number\" value=\"00093\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00093\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1719758847647</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00094\" summary=\"刷题\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1719758860461</created>\r\n      <option name=\"number\" value=\"00094\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00094\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1719758860461</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00095\" summary=\"刷题\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1719758883671</created>\r\n      <option name=\"number\" value=\"00095\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00095\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1719758883671</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00096\" summary=\"刷题\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1719842854545</created>\r\n      <option name=\"number\" value=\"00096\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00096\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1719842854546</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00097\" summary=\"刷题\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1719843275559</created>\r\n      <option name=\"number\" value=\"00097\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00097\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1719843275559</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00098\" summary=\"刷题\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1719843295141</created>\r\n      <option name=\"number\" value=\"00098\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00098\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1719843295141</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00099\" summary=\"刷题\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1719933269955</created>\r\n      <option name=\"number\" value=\"00099\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00099\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1719933269956</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00100\" summary=\"刷题\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1720019125078</created>\r\n      <option name=\"number\" value=\"00100\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00100\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1720019125078</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00101\" summary=\"刷题\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1720019766528</created>\r\n      <option name=\"number\" value=\"00101\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00101\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1720019766528</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00102\" summary=\"刷题\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1720019791321</created>\r\n      <option name=\"number\" value=\"00102\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00102\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1720019791322</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00103\" summary=\"刷题\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1720019804556</created>\r\n      <option name=\"number\" value=\"00103\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00103\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1720019804556</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00104\" summary=\"刷题\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1720019818789</created>\r\n      <option name=\"number\" value=\"00104\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00104\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1720019818789</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00105\" summary=\"刷题\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1720019838489</created>\r\n      <option name=\"number\" value=\"00105\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00105\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1720019838489</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00106\" summary=\"刷题\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1720019852857</created>\r\n      <option name=\"number\" value=\"00106\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00106\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1720019852858</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00107\" summary=\"刷题\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1720105745210</created>\r\n      <option name=\"number\" value=\"00107\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00107\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1720105745210</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"108\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <option name=\"CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT\" value=\"false\" />\r\n    <MESSAGE value=\"动态规划 解题\" />\r\n    <MESSAGE value=\"阿里数字国际\" />\r\n    <MESSAGE value=\"零钱交换\" />\r\n    <MESSAGE value=\"寻找数组的中心下标\" />\r\n    <MESSAGE value=\"合并区间、旋转矩阵\" />\r\n    <MESSAGE value=\"刷题\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"刷题\" />\r\n    <option name=\"REFORMAT_BEFORE_PROJECT_COMMIT\" value=\"true\" />\r\n  </component>\r\n  <component name=\"XDebuggerManager\">\r\n    <breakpoint-manager>\r\n      <breakpoints>\r\n        <line-breakpoint type=\"java-line\">\r\n          <url>file://$PROJECT_DIR$/src/main/java/practice/L88_合并两个有序数组.java</url>\r\n          <line>25</line>\r\n          <option name=\"timeStamp\" value=\"1\" />\r\n        </line-breakpoint>\r\n        <line-breakpoint type=\"java-line\">\r\n          <url>file://$PROJECT_DIR$/src/main/java/practice/L1_两数之和.java</url>\r\n          <line>45</line>\r\n          <option name=\"timeStamp\" value=\"5\" />\r\n        </line-breakpoint>\r\n        <line-breakpoint type=\"java-line\">\r\n          <url>file://$PROJECT_DIR$/src/main/java/practice/L1_两数之和.java</url>\r\n          <line>60</line>\r\n          <option name=\"timeStamp\" value=\"6\" />\r\n        </line-breakpoint>\r\n        <line-breakpoint type=\"java-line\">\r\n          <url>file://$PROJECT_DIR$/src/main/java/practice/L643_子数组最大平均数I.java</url>\r\n          <line>18</line>\r\n          <option name=\"timeStamp\" value=\"7\" />\r\n        </line-breakpoint>\r\n        <line-breakpoint type=\"java-line\">\r\n          <url>file://$PROJECT_DIR$/src/main/java/practice/L643_子数组最大平均数I.java</url>\r\n          <line>68</line>\r\n          <option name=\"timeStamp\" value=\"11\" />\r\n        </line-breakpoint>\r\n        <line-breakpoint type=\"java-line\">\r\n          <url>file://$PROJECT_DIR$/src/main/java/study/P43_链表递归.java</url>\r\n          <line>71</line>\r\n          <option name=\"timeStamp\" value=\"13\" />\r\n        </line-breakpoint>\r\n        <line-breakpoint type=\"java-line\">\r\n          <url>file://$PROJECT_DIR$/src/main/java/study/P43_链表递归.java</url>\r\n          <line>54</line>\r\n          <option name=\"timeStamp\" value=\"14\" />\r\n        </line-breakpoint>\r\n        <line-breakpoint type=\"java-line\">\r\n          <url>file://$PROJECT_DIR$/src/main/java/study/P43_链表递归.java</url>\r\n          <line>33</line>\r\n          <option name=\"timeStamp\" value=\"17\" />\r\n        </line-breakpoint>\r\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\r\n          <url>file://$PROJECT_DIR$/src/main/java/study/P43_链表递归.java</url>\r\n          <line>114</line>\r\n          <option name=\"timeStamp\" value=\"25\" />\r\n        </line-breakpoint>\r\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\r\n          <url>file://$PROJECT_DIR$/src/main/java/study/P42_链表练习.java</url>\r\n          <line>62</line>\r\n          <option name=\"timeStamp\" value=\"26\" />\r\n        </line-breakpoint>\r\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\r\n          <url>file://$PROJECT_DIR$/src/main/java/study/P50_递归插入排序.java</url>\r\n          <line>27</line>\r\n          <option name=\"timeStamp\" value=\"29\" />\r\n        </line-breakpoint>\r\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\r\n          <url>file://$PROJECT_DIR$/src/main/java/study/P52_斐波那契数列.java</url>\r\n          <line>61</line>\r\n          <option name=\"timeStamp\" value=\"31\" />\r\n        </line-breakpoint>\r\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\r\n          <url>file://$PROJECT_DIR$/src/main/java/study/P57_杨辉三角_记忆法.java</url>\r\n          <line>17</line>\r\n          <option name=\"timeStamp\" value=\"34\" />\r\n        </line-breakpoint>\r\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\r\n          <url>file://$PROJECT_DIR$/src/main/java/study/P57_杨辉三角_记忆法.java</url>\r\n          <line>28</line>\r\n          <option name=\"timeStamp\" value=\"35\" />\r\n        </line-breakpoint>\r\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\r\n          <url>file://$PROJECT_DIR$/src/main/java/study/P57_杨辉三角_记忆法.java</url>\r\n          <line>34</line>\r\n          <option name=\"timeStamp\" value=\"36\" />\r\n        </line-breakpoint>\r\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\r\n          <url>file://$PROJECT_DIR$/src/main/java/study/test1.java</url>\r\n          <line>55</line>\r\n          <option name=\"timeStamp\" value=\"37\" />\r\n        </line-breakpoint>\r\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\r\n          <url>file://$PROJECT_DIR$/src/main/java/study/test1.java</url>\r\n          <line>63</line>\r\n          <option name=\"timeStamp\" value=\"38\" />\r\n        </line-breakpoint>\r\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\r\n          <url>file://$PROJECT_DIR$/src/main/java/study/test1.java</url>\r\n          <line>74</line>\r\n          <option name=\"timeStamp\" value=\"39\" />\r\n        </line-breakpoint>\r\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\r\n          <url>file://$PROJECT_DIR$/src/main/java/study/test1.java</url>\r\n          <line>28</line>\r\n          <option name=\"timeStamp\" value=\"41\" />\r\n        </line-breakpoint>\r\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\r\n          <url>file://$PROJECT_DIR$/src/main/java/study/test1.java</url>\r\n          <line>30</line>\r\n          <option name=\"timeStamp\" value=\"42\" />\r\n        </line-breakpoint>\r\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\r\n          <url>file://$PROJECT_DIR$/src/main/java/study/PREV_282.java</url>\r\n          <line>30</line>\r\n          <option name=\"timeStamp\" value=\"45\" />\r\n        </line-breakpoint>\r\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\r\n          <url>file://$PROJECT_DIR$/src/main/java/study/PREV_282.java</url>\r\n          <line>47</line>\r\n          <option name=\"timeStamp\" value=\"46\" />\r\n        </line-breakpoint>\r\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\r\n          <url>file://$PROJECT_DIR$/src/main/java/exam/meituan_jishu5_2024_4_6/exam1.java</url>\r\n          <line>49</line>\r\n          <option name=\"timeStamp\" value=\"48\" />\r\n        </line-breakpoint>\r\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\r\n          <url>file://$PROJECT_DIR$/src/main/java/exam/ali_shuziguoji_2024_4_8/Main.java</url>\r\n          <line>19</line>\r\n          <option name=\"timeStamp\" value=\"55\" />\r\n        </line-breakpoint>\r\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\r\n          <url>file://$PROJECT_DIR$/src/main/java/exam/ali_shuziguoji_2024_4_8/Main.java</url>\r\n          <line>21</line>\r\n          <option name=\"timeStamp\" value=\"56\" />\r\n        </line-breakpoint>\r\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\r\n          <url>file://$PROJECT_DIR$/src/main/java/interview/paiang_2024_3_28.java</url>\r\n          <line>65</line>\r\n          <option name=\"timeStamp\" value=\"64\" />\r\n        </line-breakpoint>\r\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\r\n          <url>file://$PROJECT_DIR$/src/main/java/interview/paiang_2024_3_28.java</url>\r\n          <line>40</line>\r\n          <option name=\"timeStamp\" value=\"65\" />\r\n        </line-breakpoint>\r\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\r\n          <url>file://$PROJECT_DIR$/src/main/java/practice/零矩阵.java</url>\r\n          <line>19</line>\r\n          <option name=\"timeStamp\" value=\"68\" />\r\n        </line-breakpoint>\r\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\r\n          <url>file://$PROJECT_DIR$/src/main/java/practice/零矩阵.java</url>\r\n          <line>27</line>\r\n          <option name=\"timeStamp\" value=\"69\" />\r\n        </line-breakpoint>\r\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\r\n          <url>file://$PROJECT_DIR$/src/main/java/practice/零矩阵.java</url>\r\n          <line>40</line>\r\n          <option name=\"timeStamp\" value=\"70\" />\r\n        </line-breakpoint>\r\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\r\n          <url>file://$PROJECT_DIR$/src/main/java/demo.java</url>\r\n          <line>17</line>\r\n          <option name=\"timeStamp\" value=\"72\" />\r\n        </line-breakpoint>\r\n      </breakpoints>\r\n    </breakpoint-manager>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision ecbcd682b3b6b669b6852fc72e5cccaba41cd9d1)
++++ b/.idea/workspace.xml	(date 1720194631452)
+@@ -5,8 +5,9 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="e1fe7745-aaf7-47e2-955b-8388cc84bcec" name="更改" comment="刷题">
+-      <change beforePath="$PROJECT_DIR$/.idea/leetcode/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/leetcode/editor.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/leetcode/statistics.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/leetcode/statistics.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/[LCR 060]前 K 个高频元素.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/doc/content/[215]数组中的第K个最大元素.md" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/doc/content/[LCR 016]无重复字符的最长子串.md" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/[121]买卖股票的最佳时机.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/[121]买卖股票的最佳时机.java" afterDir="false" />
+     </list>
+@@ -46,32 +47,32 @@
+     <option name="autoscrollToSource" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent">{
+-  &quot;keyToString&quot;: {
+-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+-    &quot;database.data.extractors.current.export.id&quot;: &quot;SQL 插入&quot;,
+-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+-    &quot;last_opened_file_path&quot;: &quot;G:/JAVA/Competition/Evergreen-recruitment&quot;,
+-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+-    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
+-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+-    &quot;settings.editor.selected.configurable&quot;: &quot;application.passwordSafe&quot;,
+-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
++  <component name="PropertiesComponent"><![CDATA[{
++  "keyToString": {
++    "RunOnceActivity.OpenProjectViewOnStart": "true",
++    "RunOnceActivity.ShowReadmeOnStart": "true",
++    "WebServerToolWindowFactoryState": "false",
++    "database.data.extractors.current.export.id": "SQL 插入",
++    "git-widget-placeholder": "feature-main-LC",
++    "last_opened_file_path": "G:/JAVA/Competition/Evergreen-recruitment",
++    "node.js.detected.package.eslint": "true",
++    "node.js.detected.package.tslint": "true",
++    "node.js.selected.package.eslint": "(autodetect)",
++    "node.js.selected.package.tslint": "(autodetect)",
++    "nodejs_package_manager_path": "npm",
++    "project.structure.last.edited": "模块",
++    "project.structure.proportion": "0.15",
++    "project.structure.side.proportion": "0.2",
++    "settings.editor.selected.configurable": "application.passwordSafe",
++    "vue.rearranger.settings.migration": "true"
+   },
+-  &quot;keyToStringList&quot;: {
+-    &quot;DatabaseDriversLRU&quot;: [
+-      &quot;redis&quot;,
+-      &quot;mysql&quot;
++  "keyToStringList": {
++    "DatabaseDriversLRU": [
++      "redis",
++      "mysql"
+     ]
+   }
+-}</component>
++}]]></component>
+   <component name="RecentsManager">
+     <key name="MoveFile.RECENT_KEYS">
+       <recent name="G:\JAVA\project1\Data_structures_and_algorithms\src\main\java\demo" />
+@@ -339,79 +340,11 @@
+       <workItem from="1720067202059" duration="11000" />
+       <workItem from="1720099306621" duration="665000" />
+       <workItem from="1720100607125" duration="3625000" />
+-      <workItem from="1720183992382" duration="5349000" />
+-    </task>
+-    <task id="LOCAL-00059" summary="刷题">
+-      <option name="closed" value="true" />
+-      <created>1717593997251</created>
+-      <option name="number" value="00059" />
+-      <option name="presentableId" value="LOCAL-00059" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1717593997251</updated>
+-    </task>
+-    <task id="LOCAL-00060" summary="刷题">
+-      <option name="closed" value="true" />
+-      <created>1717598879024</created>
+-      <option name="number" value="00060" />
+-      <option name="presentableId" value="LOCAL-00060" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1717598879024</updated>
+-    </task>
+-    <task id="LOCAL-00061" summary="刷题">
+-      <option name="closed" value="true" />
+-      <created>1717598908017</created>
+-      <option name="number" value="00061" />
+-      <option name="presentableId" value="LOCAL-00061" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1717598908017</updated>
+-    </task>
+-    <task id="LOCAL-00062" summary="刷题">
+-      <option name="closed" value="true" />
+-      <created>1717598925488</created>
+-      <option name="number" value="00062" />
+-      <option name="presentableId" value="LOCAL-00062" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1717598925488</updated>
+-    </task>
+-    <task id="LOCAL-00063" summary="刷题">
+-      <option name="closed" value="true" />
+-      <created>1717679614951</created>
+-      <option name="number" value="00063" />
+-      <option name="presentableId" value="LOCAL-00063" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1717679614951</updated>
+-    </task>
+-    <task id="LOCAL-00064" summary="刷题">
+-      <option name="closed" value="true" />
+-      <created>1717812042526</created>
+-      <option name="number" value="00064" />
+-      <option name="presentableId" value="LOCAL-00064" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1717812042527</updated>
+-    </task>
+-    <task id="LOCAL-00065" summary="刷题">
+-      <option name="closed" value="true" />
+-      <created>1717856763647</created>
+-      <option name="number" value="00065" />
+-      <option name="presentableId" value="LOCAL-00065" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1717856763647</updated>
+-    </task>
+-    <task id="LOCAL-00066" summary="刷题">
+-      <option name="closed" value="true" />
+-      <created>1717904618433</created>
+-      <option name="number" value="00066" />
+-      <option name="presentableId" value="LOCAL-00066" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1717904618433</updated>
+-    </task>
+-    <task id="LOCAL-00067" summary="刷题">
+-      <option name="closed" value="true" />
+-      <created>1717987902620</created>
+-      <option name="number" value="00067" />
+-      <option name="presentableId" value="LOCAL-00067" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1717987902620</updated>
++      <workItem from="1720183992382" duration="5482000" />
++      <workItem from="1720191136799" duration="210000" />
++      <workItem from="1720191368117" duration="95000" />
++      <workItem from="1720191627524" duration="32000" />
++      <workItem from="1720193937305" duration="390000" />
+     </task>
+     <task id="LOCAL-00068" summary="刷题">
+       <option name="closed" value="true" />
+@@ -733,7 +666,79 @@
+       <option name="project" value="LOCAL" />
+       <updated>1720105745210</updated>
+     </task>
+-    <option name="localTasksCounter" value="108" />
++    <task id="LOCAL-00108" summary="刷题">
++      <option name="closed" value="true" />
++      <created>1720191068247</created>
++      <option name="number" value="00108" />
++      <option name="presentableId" value="LOCAL-00108" />
++      <option name="project" value="LOCAL" />
++      <updated>1720191068247</updated>
++    </task>
++    <task id="LOCAL-00109" summary="刷题">
++      <option name="closed" value="true" />
++      <created>1720191261401</created>
++      <option name="number" value="00109" />
++      <option name="presentableId" value="LOCAL-00109" />
++      <option name="project" value="LOCAL" />
++      <updated>1720191261401</updated>
++    </task>
++    <task id="LOCAL-00110" summary="刷题">
++      <option name="closed" value="true" />
++      <created>1720193958508</created>
++      <option name="number" value="00110" />
++      <option name="presentableId" value="LOCAL-00110" />
++      <option name="project" value="LOCAL" />
++      <updated>1720193958508</updated>
++    </task>
++    <task id="LOCAL-00111" summary="刷题">
++      <option name="closed" value="true" />
++      <created>1720194082326</created>
++      <option name="number" value="00111" />
++      <option name="presentableId" value="LOCAL-00111" />
++      <option name="project" value="LOCAL" />
++      <updated>1720194082326</updated>
++    </task>
++    <task id="LOCAL-00112" summary="刷题">
++      <option name="closed" value="true" />
++      <created>1720194290780</created>
++      <option name="number" value="00112" />
++      <option name="presentableId" value="LOCAL-00112" />
++      <option name="project" value="LOCAL" />
++      <updated>1720194290780</updated>
++    </task>
++    <task id="LOCAL-00113" summary="刷题">
++      <option name="closed" value="true" />
++      <created>1720194302877</created>
++      <option name="number" value="00113" />
++      <option name="presentableId" value="LOCAL-00113" />
++      <option name="project" value="LOCAL" />
++      <updated>1720194302877</updated>
++    </task>
++    <task id="LOCAL-00114" summary="刷题">
++      <option name="closed" value="true" />
++      <created>1720194315763</created>
++      <option name="number" value="00114" />
++      <option name="presentableId" value="LOCAL-00114" />
++      <option name="project" value="LOCAL" />
++      <updated>1720194315763</updated>
++    </task>
++    <task id="LOCAL-00115" summary="刷题">
++      <option name="closed" value="true" />
++      <created>1720194583361</created>
++      <option name="number" value="00115" />
++      <option name="presentableId" value="LOCAL-00115" />
++      <option name="project" value="LOCAL" />
++      <updated>1720194583361</updated>
++    </task>
++    <task id="LOCAL-00116" summary="刷题">
++      <option name="closed" value="true" />
++      <created>1720194609688</created>
++      <option name="number" value="00116" />
++      <option name="presentableId" value="LOCAL-00116" />
++      <option name="project" value="LOCAL" />
++      <updated>1720194609688</updated>
++    </task>
++    <option name="localTasksCounter" value="117" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -744,7 +749,19 @@
+       <map>
+         <entry key="MAIN">
+           <value>
+-            <State />
++            <State>
++              <option name="FILTERS">
++                <map>
++                  <entry key="branch">
++                    <value>
++                      <list>
++                        <option value="master" />
++                      </list>
++                    </value>
++                  </entry>
++                </map>
++              </option>
++            </State>
+           </value>
+         </entry>
+       </map>
