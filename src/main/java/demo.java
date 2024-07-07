@@ -2,7 +2,13 @@ import java.util.*;
 
 public class demo {
     public static void main(String[] args) {
-        System.out.println(strStr("leetcode", "leeto"));
+        // System.out.println(strStr("leetcode", "leeto"));
+
+        // new demo().combinationSum3(3, 7);
+        StringBuilder sb = new StringBuilder("22.33.44");
+        System.out.println(sb.lastIndexOf("."));
+        System.out.println(sb.delete(5, sb.length()));
+        System.out.println();
     }
 
     public static int strStr(String haystack, String needle) {
@@ -60,4 +66,35 @@ public class demo {
     }
 
 
+    List<List<Integer>> res = new ArrayList<>();
+    LinkedList<Integer> path = new LinkedList<>();
+
+    public List<List<Integer>> combinationSum3(int k, int target) {
+        int index = 1;
+        int sum = 0;
+        method(target, k, index, sum);
+        return res;
+    }
+
+    public void method(int target, int k, int index, int sum) {
+
+        if (path.size() == k && sum != target) {
+            return;
+        }
+        else if (path.size() == k && sum == target) {
+            res.add(new ArrayList<>(path));
+            return;
+        }
+
+        StringBuilder sb = new StringBuilder();
+
+        for (int i = index; i <= 9; ++i) {
+            sum += i;
+            path.add(i);
+            method(target, k, i + 1, sum);
+            sum -= i;
+            path.removeLast();
+        }
+
+    }
 }
