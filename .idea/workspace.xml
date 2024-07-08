@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1fe7745-aaf7-47e2-955b-8388cc84bcec" name="更改" comment="刷题" />
+    <list default="true" id="e1fe7745-aaf7-47e2-955b-8388cc84bcec" name="更改" comment="刷题">
+      <change afterPath="$PROJECT_DIR$/src/main/java/study/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/leetcode/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/leetcode/editor.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/leetcode/statistics.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/leetcode/statistics.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/[LCR 081]组合总和.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/[LCR 081]组合总和.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -81,7 +87,7 @@
       <recent name="study" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.demo">
+  <component name="RunManager" selected="应用程序.Solution">
     <configuration name="零矩阵" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="practice.零矩阵" />
       <module name="Data_structures_and_algorithms" />
@@ -102,22 +108,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="demo" />
+    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="study.Solution" />
       <module name="Data_structures_and_algorithms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="study.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="exam.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="exam.Main" />
+    <configuration name="demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="demo" />
       <module name="Data_structures_and_algorithms" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="exam.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -137,11 +143,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.Solution" />
         <item itemvalue="应用程序.demo" />
         <item itemvalue="应用程序.零矩阵" />
         <item itemvalue="应用程序.test1" />
         <item itemvalue="应用程序.Main" />
-        <item itemvalue="应用程序.exam.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -343,22 +349,8 @@
       <workItem from="1720194806079" duration="352000" />
       <workItem from="1720233987432" duration="3673000" />
       <workItem from="1720325698374" duration="10841000" />
-    </task>
-    <task id="LOCAL-00090" summary="刷题">
-      <option name="closed" value="true" />
-      <created>1719758798420</created>
-      <option name="number" value="00090" />
-      <option name="presentableId" value="LOCAL-00090" />
-      <option name="project" value="LOCAL" />
-      <updated>1719758798421</updated>
-    </task>
-    <task id="LOCAL-00091" summary="刷题">
-      <option name="closed" value="true" />
-      <created>1719758819548</created>
-      <option name="number" value="00091" />
-      <option name="presentableId" value="LOCAL-00091" />
-      <option name="project" value="LOCAL" />
-      <updated>1719758819548</updated>
+      <workItem from="1720362752188" duration="126000" />
+      <workItem from="1720445882619" duration="4071000" />
     </task>
     <task id="LOCAL-00092" summary="刷题">
       <option name="closed" value="true" />
@@ -736,7 +728,23 @@
       <option name="project" value="LOCAL" />
       <updated>1720362703856</updated>
     </task>
-    <option name="localTasksCounter" value="139" />
+    <task id="LOCAL-00139" summary="刷题">
+      <option name="closed" value="true" />
+      <created>1720362840385</created>
+      <option name="number" value="00139" />
+      <option name="presentableId" value="LOCAL-00139" />
+      <option name="project" value="LOCAL" />
+      <updated>1720362840386</updated>
+    </task>
+    <task id="LOCAL-00140" summary="刷题">
+      <option name="closed" value="true" />
+      <created>1720362860317</created>
+      <option name="number" value="00140" />
+      <option name="presentableId" value="LOCAL-00140" />
+      <option name="project" value="LOCAL" />
+      <updated>1720362860317</updated>
+    </task>
+    <option name="localTasksCounter" value="141" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -931,6 +939,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/demo.java</url>
           <line>75</line>
           <option name="timeStamp" value="75" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/study/Solution.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="77" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
