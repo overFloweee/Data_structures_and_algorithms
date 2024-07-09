@@ -1,31 +1,36 @@
-package study;
-
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 class Solution {
-    List<List<Integer>> res = new ArrayList<>();
-    List<Integer> path = new ArrayList<>();
 
-    public static void main(String[] args) {
-        new Solution().subsetsWithDup(new int[]{1, 2, 2});
-    }
-
-    public List<List<Integer>> subsetsWithDup(int[] nums) {
-        int index = 0;
-        backTracking(nums, index);
+    public List<List<Integer>> findSubsequences(int[] nums) {
+        backTracking(nums, 0);
         return res;
     }
 
-    public void backTracking(int[] nums, int index) {
-        res.add(new ArrayList<>(path));
+    public static void main(String[] args) {
+        new Solution().findSubsequences(new int[]{1, 2, 1, 1});
+    }
 
-        for (int i = index; i < nums.length; ++i) {
-            path.add(nums[i]);
-            backTracking(nums, i + 1);
-            path.remove(path.size() - 1);
+
+    List<List<Integer>> res = new ArrayList<>();
+    LinkedList<Integer> path = new LinkedList<>();
+    public void backTracking(int[] nums, int index) {
+        if (path.size() >= 2) {
+            res.add(new ArrayList<>(path));
         }
 
-
+        for (int i = index; i < nums.length; ++i) {
+            if (i > index && nums[i] == nums[i - 1]) {
+                continue;
+            }
+            if (!path.isEmpty() && path.peekLast() > nums[i]) {
+                continue;
+            }
+            path.add(nums[i]);
+            backTracking(nums, i + 1);
+            path.removeLast();
+        }
     }
 }
