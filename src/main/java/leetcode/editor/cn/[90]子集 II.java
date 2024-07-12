@@ -47,7 +47,24 @@ class Solution {
         return res;
     }
 
+
     public void backTracking(int[] nums, int index) {
+        res.add(new ArrayList<>(path));
+
+        for (int i = index; i < nums.length; ++i) {
+            // 这里的判断条件是 i > index，而不是 i > 0这个简单的条件
+            if (i > index && nums[i] == nums[i - 1]) {
+                continue;
+            }
+            path.add(nums[i]);
+            backTracking(nums, i + 1);
+            int last = path.get(path.size() - 1);
+            path.remove(path.size() - 1);
+        }
+    }
+
+
+    public void backTracking2(int[] nums, int index) {
         res.add(new ArrayList<>(path));
 
         for (int i = index; i < nums.length; ++i) {
@@ -60,5 +77,6 @@ class Solution {
             path.remove(path.size() - 1);
         }
     }
+
 }
 // leetcode submit region end(Prohibit modification and deletion)

@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e1fe7745-aaf7-47e2-955b-8388cc84bcec" name="更改" comment="刷题">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Solution2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/leetcode/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/leetcode/editor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/leetcode/statistics.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/leetcode/statistics.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -348,15 +347,8 @@
       <workItem from="1720445882619" duration="4340000" />
       <workItem from="1720527248270" duration="5582000" />
       <workItem from="1720617934067" duration="4405000" />
-      <workItem from="1720708167035" duration="1164000" />
-    </task>
-    <task id="LOCAL-00108" summary="刷题">
-      <option name="closed" value="true" />
-      <created>1720194694769</created>
-      <option name="number" value="00108" />
-      <option name="presentableId" value="LOCAL-00108" />
-      <option name="project" value="LOCAL" />
-      <updated>1720194694769</updated>
+      <workItem from="1720708167035" duration="1194000" />
+      <workItem from="1720791397198" duration="2822000" />
     </task>
     <task id="LOCAL-00109" summary="刷题">
       <option name="closed" value="true" />
@@ -742,7 +734,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720625719486</updated>
     </task>
-    <option name="localTasksCounter" value="157" />
+    <task id="LOCAL-00157" summary="刷题">
+      <option name="closed" value="true" />
+      <created>1720709851434</created>
+      <option name="number" value="00157" />
+      <option name="presentableId" value="LOCAL-00157" />
+      <option name="project" value="LOCAL" />
+      <updated>1720709851434</updated>
+    </task>
+    <option name="localTasksCounter" value="158" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
