@@ -5,11 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e1fe7745-aaf7-47e2-955b-8388cc84bcec" name="更改" comment="刷题">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/87e2a592-2e41-4b5c-9aec-b19417c570fd/storage_v2/_src_/schema/reggie.rx5IyA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/87e2a592-2e41-4b5c-9aec-b19417c570fd/storage_v2/_src_/schema/reggie.rx5IyA.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/87e2a592-2e41-4b5c-9aec-b19417c570fd/storage_v2/_src_/schema/shuangxing.hIyJPw.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/87e2a592-2e41-4b5c-9aec-b19417c570fd/storage_v2/_src_/schema/shuangxing.hIyJPw.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b6108030-509d-4a38-bbb7-523927e8ba73.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b6108030-509d-4a38-bbb7-523927e8ba73.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b6108030-509d-4a38-bbb7-523927e8ba73/storage_v2/_src_/schema/test.kkQ2AA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b6108030-509d-4a38-bbb7-523927e8ba73/storage_v2/_src_/schema/test.kkQ2AA.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/leetcode/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/leetcode/editor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/leetcode/statistics.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/leetcode/statistics.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/_2024-07-05_23_48____.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/在进行更新之前于_2024-07-05_23_48_取消提交了更改_[更改]/shelved.patch" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/[90]子集 II.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/[90]子集 II.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/study/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,32 +58,32 @@
     <option name="autoscrollToSource" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;database.data.extractors.current.export.id&quot;: &quot;SQL 插入&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;G:/JAVA/Competition/Evergreen-recruitment&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;application.passwordSafe&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "database.data.extractors.current.export.id": "SQL 插入",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/86157/Desktop/businesses.sql",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "application.passwordSafe",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;redis&quot;,
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "redis",
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="G:\JAVA\project1\Data_structures_and_algorithms\src\main\java\demo" />
@@ -348,15 +354,8 @@
       <workItem from="1720527248270" duration="5582000" />
       <workItem from="1720617934067" duration="4405000" />
       <workItem from="1720708167035" duration="1194000" />
-      <workItem from="1720791397198" duration="2822000" />
-    </task>
-    <task id="LOCAL-00109" summary="刷题">
-      <option name="closed" value="true" />
-      <created>1720194706889</created>
-      <option name="number" value="00109" />
-      <option name="presentableId" value="LOCAL-00109" />
-      <option name="project" value="LOCAL" />
-      <updated>1720194706889</updated>
+      <workItem from="1720791397198" duration="2870000" />
+      <workItem from="1720836173636" duration="15863000" />
     </task>
     <task id="LOCAL-00110" summary="刷题">
       <option name="closed" value="true" />
@@ -742,7 +741,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720709851434</updated>
     </task>
-    <option name="localTasksCounter" value="158" />
+    <task id="LOCAL-00158" summary="刷题">
+      <option name="closed" value="true" />
+      <created>1720796395305</created>
+      <option name="number" value="00158" />
+      <option name="presentableId" value="LOCAL-00158" />
+      <option name="project" value="LOCAL" />
+      <updated>1720796395305</updated>
+    </task>
+    <option name="localTasksCounter" value="159" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -925,17 +932,17 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/demo.java</url>
-          <line>23</line>
+          <line>26</line>
           <option name="timeStamp" value="72" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/demo.java</url>
-          <line>91</line>
+          <line>94</line>
           <option name="timeStamp" value="74" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/demo.java</url>
-          <line>75</line>
+          <line>78</line>
           <option name="timeStamp" value="75" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">

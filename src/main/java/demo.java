@@ -5,9 +5,12 @@ public class demo {
         // System.out.println(strStr("leetcode", "leeto"));
 
         // new demo().combinationSum3(3, 7);
-        StringBuilder sb = new StringBuilder("22.33.44");
-        System.out.println(sb.lastIndexOf("."));
-        System.out.println(sb.delete(5, sb.length()));
+        // StringBuilder sb = new StringBuilder("22.33.44");
+        // System.out.println(sb.lastIndexOf("."));
+        // System.out.println(sb.delete(5, sb.length()));
+        // System.out.println();
+        boolean a = false;
+
         System.out.println();
     }
 
