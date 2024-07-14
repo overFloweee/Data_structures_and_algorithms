@@ -125,5 +125,32 @@ class Solution
         return ans;
     }
 
+    // 贪心初解
+    public int maxProfit(int[] prices) {
+
+        int sum = 0;
+        int min = Integer.MAX_VALUE;
+        int max = 0;
+        for (int i = 0; i < prices.length; ++i) {
+            if (min > prices[i]) {
+                min = prices[i];
+            }
+            else {
+                if (i < prices.length - 1 && prices[i + 1] > prices[i]) {
+                    continue;
+                } else {
+                    sum += prices[i] - min;
+                    min = Integer.MAX_VALUE;
+                }
+            }
+        }
+
+        return sum;
+    }
+
+
+
+
+
 }
 // leetcode submit region end(Prohibit modification and deletion)
