@@ -6,16 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="e1fe7745-aaf7-47e2-955b-8388cc84bcec" name="更改" comment="刷题">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/87e2a592-2e41-4b5c-9aec-b19417c570fd/storage_v2/_src_/schema/reggie.rx5IyA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/87e2a592-2e41-4b5c-9aec-b19417c570fd/storage_v2/_src_/schema/reggie.rx5IyA.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/87e2a592-2e41-4b5c-9aec-b19417c570fd/storage_v2/_src_/schema/shuangxing.hIyJPw.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/87e2a592-2e41-4b5c-9aec-b19417c570fd/storage_v2/_src_/schema/shuangxing.hIyJPw.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b6108030-509d-4a38-bbb7-523927e8ba73.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b6108030-509d-4a38-bbb7-523927e8ba73.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b6108030-509d-4a38-bbb7-523927e8ba73/storage_v2/_src_/schema/test.kkQ2AA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b6108030-509d-4a38-bbb7-523927e8ba73/storage_v2/_src_/schema/test.kkQ2AA.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/leetcode/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/leetcode/editor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/leetcode/statistics.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/leetcode/statistics.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/_2024-07-05_23_48____.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/在进行更新之前于_2024-07-05_23_48_取消提交了更改_[更改]/shelved.patch" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/[122]买卖股票的最佳时机 II.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/[122]买卖股票的最佳时机 II.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/demo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/demo.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,32 +54,32 @@
     <option name="autoscrollToSource" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "database.data.extractors.current.export.id": "SQL 插入",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/86157/Desktop/businesses.sql",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "模块",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "application.passwordSafe",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;database.data.extractors.current.export.id&quot;: &quot;SQL 插入&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/86157/Desktop/businesses.sql&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;application.passwordSafe&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "redis",
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;redis&quot;,
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="G:\JAVA\project1\Data_structures_and_algorithms\src\main\java\demo" />
@@ -93,20 +89,7 @@
       <recent name="study" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.Solution2">
-    <configuration name="零矩阵" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="practice.零矩阵" />
-      <module name="Data_structures_and_algorithms" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="practice.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="应用程序.demo.Solution">
     <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="study.Solution" />
       <module name="Data_structures_and_algorithms" />
@@ -141,13 +124,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="demo.Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="demo.Solution" />
+      <module name="Data_structures_and_algorithms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.demo.Solution" />
         <item itemvalue="应用程序.Solution2" />
         <item itemvalue="应用程序.Solution1" />
         <item itemvalue="应用程序.Solution" />
         <item itemvalue="应用程序.demo" />
-        <item itemvalue="应用程序.零矩阵" />
       </list>
     </recent_temporary>
   </component>
@@ -355,71 +351,9 @@
       <workItem from="1720617934067" duration="4405000" />
       <workItem from="1720708167035" duration="1194000" />
       <workItem from="1720791397198" duration="2870000" />
-      <workItem from="1720836173636" duration="15863000" />
-    </task>
-    <task id="LOCAL-00110" summary="刷题">
-      <option name="closed" value="true" />
-      <created>1720194742015</created>
-      <option name="number" value="00110" />
-      <option name="presentableId" value="LOCAL-00110" />
-      <option name="project" value="LOCAL" />
-      <updated>1720194742015</updated>
-    </task>
-    <task id="LOCAL-00111" summary="刷题">
-      <option name="closed" value="true" />
-      <created>1720194874265</created>
-      <option name="number" value="00111" />
-      <option name="presentableId" value="LOCAL-00111" />
-      <option name="project" value="LOCAL" />
-      <updated>1720194874265</updated>
-    </task>
-    <task id="LOCAL-00112" summary="刷题">
-      <option name="closed" value="true" />
-      <created>1720194895930</created>
-      <option name="number" value="00112" />
-      <option name="presentableId" value="LOCAL-00112" />
-      <option name="project" value="LOCAL" />
-      <updated>1720194895930</updated>
-    </task>
-    <task id="LOCAL-00113" summary="刷题">
-      <option name="closed" value="true" />
-      <created>1720194920109</created>
-      <option name="number" value="00113" />
-      <option name="presentableId" value="LOCAL-00113" />
-      <option name="project" value="LOCAL" />
-      <updated>1720194920109</updated>
-    </task>
-    <task id="LOCAL-00114" summary="刷题">
-      <option name="closed" value="true" />
-      <created>1720194958541</created>
-      <option name="number" value="00114" />
-      <option name="presentableId" value="LOCAL-00114" />
-      <option name="project" value="LOCAL" />
-      <updated>1720194958541</updated>
-    </task>
-    <task id="LOCAL-00115" summary="刷题">
-      <option name="closed" value="true" />
-      <created>1720195036905</created>
-      <option name="number" value="00115" />
-      <option name="presentableId" value="LOCAL-00115" />
-      <option name="project" value="LOCAL" />
-      <updated>1720195036905</updated>
-    </task>
-    <task id="LOCAL-00116" summary="刷题">
-      <option name="closed" value="true" />
-      <created>1720195073581</created>
-      <option name="number" value="00116" />
-      <option name="presentableId" value="LOCAL-00116" />
-      <option name="project" value="LOCAL" />
-      <updated>1720195073581</updated>
-    </task>
-    <task id="LOCAL-00117" summary="刷题">
-      <option name="closed" value="true" />
-      <created>1720195111390</created>
-      <option name="number" value="00117" />
-      <option name="presentableId" value="LOCAL-00117" />
-      <option name="project" value="LOCAL" />
-      <updated>1720195111390</updated>
+      <workItem from="1720836173636" duration="15886000" />
+      <workItem from="1720928626787" duration="2665000" />
+      <workItem from="1720937547746" duration="3953000" />
     </task>
     <task id="LOCAL-00118" summary="刷题">
       <option name="closed" value="true" />
@@ -749,7 +683,71 @@
       <option name="project" value="LOCAL" />
       <updated>1720796395305</updated>
     </task>
-    <option name="localTasksCounter" value="159" />
+    <task id="LOCAL-00159" summary="刷题">
+      <option name="closed" value="true" />
+      <created>1720885671368</created>
+      <option name="number" value="00159" />
+      <option name="presentableId" value="LOCAL-00159" />
+      <option name="project" value="LOCAL" />
+      <updated>1720885671368</updated>
+    </task>
+    <task id="LOCAL-00160" summary="刷题">
+      <option name="closed" value="true" />
+      <created>1720937325292</created>
+      <option name="number" value="00160" />
+      <option name="presentableId" value="LOCAL-00160" />
+      <option name="project" value="LOCAL" />
+      <updated>1720937325293</updated>
+    </task>
+    <task id="LOCAL-00161" summary="刷题">
+      <option name="closed" value="true" />
+      <created>1720937469084</created>
+      <option name="number" value="00161" />
+      <option name="presentableId" value="LOCAL-00161" />
+      <option name="project" value="LOCAL" />
+      <updated>1720937469084</updated>
+    </task>
+    <task id="LOCAL-00162" summary="刷题">
+      <option name="closed" value="true" />
+      <created>1720937485675</created>
+      <option name="number" value="00162" />
+      <option name="presentableId" value="LOCAL-00162" />
+      <option name="project" value="LOCAL" />
+      <updated>1720937485675</updated>
+    </task>
+    <task id="LOCAL-00163" summary="刷题">
+      <option name="closed" value="true" />
+      <created>1720937585603</created>
+      <option name="number" value="00163" />
+      <option name="presentableId" value="LOCAL-00163" />
+      <option name="project" value="LOCAL" />
+      <updated>1720937585603</updated>
+    </task>
+    <task id="LOCAL-00164" summary="刷题">
+      <option name="closed" value="true" />
+      <created>1720964904215</created>
+      <option name="number" value="00164" />
+      <option name="presentableId" value="LOCAL-00164" />
+      <option name="project" value="LOCAL" />
+      <updated>1720964904215</updated>
+    </task>
+    <task id="LOCAL-00165" summary="刷题">
+      <option name="closed" value="true" />
+      <created>1720964937741</created>
+      <option name="number" value="00165" />
+      <option name="presentableId" value="LOCAL-00165" />
+      <option name="project" value="LOCAL" />
+      <updated>1720964937741</updated>
+    </task>
+    <task id="LOCAL-00166" summary="刷题">
+      <option name="closed" value="true" />
+      <created>1720964958993</created>
+      <option name="number" value="00166" />
+      <option name="presentableId" value="LOCAL-00166" />
+      <option name="project" value="LOCAL" />
+      <updated>1720964958993</updated>
+    </task>
+    <option name="localTasksCounter" value="167" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -959,6 +957,16 @@
           <url>file://$PROJECT_DIR$/src/main/java/Solution2.java</url>
           <line>23</line>
           <option name="timeStamp" value="81" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/demo/Solution.java</url>
+          <line>4</line>
+          <option name="timeStamp" value="84" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/demo/Solution.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="85" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
