@@ -1074,8 +1074,8 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
     <schema id="292" parent="1" name="test">
-      <IntrospectionTimestamp>2024-06-29.21:51:13</IntrospectionTimestamp>
-      <LocalIntrospectionTimestamp>2024-06-29.13:51:11</LocalIntrospectionTimestamp>
+      <IntrospectionTimestamp>2024-07-13.10:36:57</IntrospectionTimestamp>
+      <LocalIntrospectionTimestamp>2024-07-13.02:36:57</LocalIntrospectionTimestamp>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
     <user id="293" parent="1" name="root">
@@ -1100,26 +1100,55 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <Host>localhost</Host>
       <Plugin>caching_sha2_password</Plugin>
     </user>
-    <table id="298" parent="292" name="table">
+    <table id="298" parent="292" name="datauser">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <column id="299" parent="298" name="id">
-      <AutoIncrement>1</AutoIncrement>
+    <table id="299" parent="292" name="table">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <column id="300" parent="298" name="id">
+      <AutoIncrement>2</AutoIncrement>
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="300" parent="298" name="name">
-      <DasType>varchar(255)|0s</DasType>
+    <column id="301" parent="298" name="nickname">
+      <DasType>varchar(20)|0s</DasType>
+      <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <index id="301" parent="298" name="PRIMARY">
+    <column id="302" parent="298" name="mobile">
+      <DasType>varchar(15)|0s</DasType>
+      <Position>3</Position>
+    </column>
+    <index id="303" parent="298" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="302" parent="298" name="PRIMARY">
+    <key id="304" parent="298" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="305" parent="299" name="id">
+      <AutoIncrement>3</AutoIncrement>
+      <DasType>int|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="306" parent="299" name="name">
+      <DasType>varchar(255)|0s</DasType>
+      <Position>2</Position>
+    </column>
+    <index id="307" parent="299" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="308" parent="299" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
