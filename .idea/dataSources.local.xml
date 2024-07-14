@@ -42,6 +42,7 @@
         <introspection-scope>
           <node kind="schema">
             <name qname="@" />
+            <name qname="hjw" />
             <name qname="reggie" />
             <name qname="shuangxing" />
           </node>
