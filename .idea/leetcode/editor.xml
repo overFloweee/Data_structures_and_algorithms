@@ -3,6 +3,17 @@
   <component name="LeetcodeEditor">
     <option name="projectConfig">
       <map>
+        <entry key="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/[1005]K 次取反后最大化的数组和.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/doc/content/[1005]K 次取反后最大化的数组和.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1005" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/[1005]K 次取反后最大化的数组和.java" />
+              <option name="titleSlug" value="maximize-sum-of-array-after-k-negations" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/[1029]两地调度.java">
           <value>
             <LeetcodeEditor>

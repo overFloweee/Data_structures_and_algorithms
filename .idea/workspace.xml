@@ -5,13 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e1fe7745-aaf7-47e2-955b-8388cc84bcec" name="更改" comment="刷题">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ddf6e630-0eab-4586-b59f-6c97792df70a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ddf6e630-0eab-4586-b59f-6c97792df70a.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ddf6e630-0eab-4586-b59f-6c97792df70a/storage_v2/_src_/schema/wordpress.ebP8NQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ddf6e630-0eab-4586-b59f-6c97792df70a/storage_v2/_src_/schema/wordpress.ebP8NQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/leetcode/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/leetcode/editor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/leetcode/statistics.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/leetcode/statistics.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/_2024-07-05_23_48____.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/在进行更新之前于_2024-07-05_23_48_取消提交了更改_[更改]/shelved.patch" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/[122]买卖股票的最佳时机 II.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/[122]买卖股票的最佳时机 II.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/demo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/demo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Solution1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Solution1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +88,7 @@
       <recent name="study" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.demo.Solution">
+  <component name="RunManager" selected="应用程序.Solution1">
     <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="study.Solution" />
       <module name="Data_structures_and_algorithms" />
@@ -139,9 +138,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.Solution1" />
         <item itemvalue="应用程序.demo.Solution" />
         <item itemvalue="应用程序.Solution2" />
-        <item itemvalue="应用程序.Solution1" />
         <item itemvalue="应用程序.Solution" />
         <item itemvalue="应用程序.demo" />
       </list>
@@ -354,14 +353,8 @@
       <workItem from="1720836173636" duration="15886000" />
       <workItem from="1720928626787" duration="2665000" />
       <workItem from="1720937547746" duration="3953000" />
-    </task>
-    <task id="LOCAL-00118" summary="刷题">
-      <option name="closed" value="true" />
-      <created>1720195131650</created>
-      <option name="number" value="00118" />
-      <option name="presentableId" value="LOCAL-00118" />
-      <option name="project" value="LOCAL" />
-      <updated>1720195131650</updated>
+      <workItem from="1721017741311" duration="741000" />
+      <workItem from="1721137639912" duration="2592000" />
     </task>
     <task id="LOCAL-00119" summary="刷题">
       <option name="closed" value="true" />
@@ -747,7 +740,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720964958993</updated>
     </task>
-    <option name="localTasksCounter" value="167" />
+    <task id="LOCAL-00167" summary="刷题">
+      <option name="closed" value="true" />
+      <created>1721138507331</created>
+      <option name="number" value="00167" />
+      <option name="presentableId" value="LOCAL-00167" />
+      <option name="project" value="LOCAL" />
+      <updated>1721138507332</updated>
+    </task>
+    <option name="localTasksCounter" value="168" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -947,11 +948,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/study/Solution.java</url>
           <line>24</line>
           <option name="timeStamp" value="78" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Solution1.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="79" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Solution2.java</url>

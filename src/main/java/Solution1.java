@@ -1,54 +1,27 @@
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
-// leetcode submit region begin(Prohibit modification and deletion)
 class Solution1 {
 
-    // 初解 - 非常困难的完成了
-    public List<List<Integer>> subsetsWithDup(int[] nums) {
-        int index = 0;
-        Arrays.sort(nums);
-        backTracking(nums, index);
-        return res;
-    }
-
     public static void main(String[] args) {
-        new Solution1().subsetsWithDup(new int[]{1, 2, 2});
+        // System.out.println(new Solution1().largestSumAfterKNegations(new int[]{4, 2, 3}, 1));
+        System.out.println(new Solution1().largestSumAfterKNegations(new int[]{2, -3, -1, 5, -4}, 2));
     }
 
-
-    List<List<Integer>> res = new ArrayList<>();
-    List<Integer> path = new ArrayList<>();
-
-    public void backTracking(int[] nums, int index) {
-        res.add(new ArrayList<>(path));
-
-        for (int i = index; i < nums.length; ++i) {
-            // 这里的判断条件是 i > index，而不是 i > 0这个简单的条件
-            if (i > index && nums[i] == nums[i - 1]) {
-                continue;
+    public int largestSumAfterKNegations(int[] nums, int k) {
+        Arrays.sort(nums);
+        int sum = 0;
+        for (int i = 0; i < nums.length; ++i) {
+            int num = nums[i];
+            if (num < 0 && k > 0) {
+                nums[i] = -1 * num;
+                k--;
             }
-            path.add(nums[i]);
-            backTracking(nums, i + 1);
-            path.remove(path.size() - 1);
-        }
-    }
-
-
-    public void backTracking2(int[] nums, int index) {
-        res.add(new ArrayList<>(path));
-
-        for (int i = index; i < nums.length; ++i) {
-            path.add(nums[i]);
-            backTracking(nums, i + 1);
-            int last = path.get(path.size() - 1);
-            while (i < nums.length - 1 && last == nums[i + 1]) {
-                i++;
+            else if (k % 2 != 0) {
+                nums[i] = -1 * num;
+                k--;
             }
-            path.remove(path.size() - 1);
+            sum += nums[i];
         }
+        return sum;
     }
-
 }
-// leetcode submit region end(Prohibit modification and deletion)
