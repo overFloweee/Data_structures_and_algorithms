@@ -124,6 +124,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/[134]加油站.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/doc/content/[134]加油站.md" />
+              <option name="frontendQuestionId" value="leetcode.cn134" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/[134]加油站.java" />
+              <option name="titleSlug" value="gas-station" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/[138]随机链表的复制.java">
           <value>
             <LeetcodeEditor>

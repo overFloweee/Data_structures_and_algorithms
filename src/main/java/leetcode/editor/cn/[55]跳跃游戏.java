@@ -50,4 +50,41 @@ public class Solution {
         // 最后一个位置无法到达
         return false;
     }
+
+    // 优解
+    public boolean canJump(int[] nums) {
+
+        int jump = 0;
+        for (int i = 0; i <= jump; ++i) {
+            jump = Integer.max(jump, i + nums[i]);
+            if (jump >= nums.length - 1) {
+                return true;
+            }
+
+        }
+
+        return false;
+    }
+
+
+    // 二刷下，提示了才解出来的
+    public boolean canJump(int[] nums) {
+        if (nums.length == 1) {
+            return true;
+        }
+
+        int total = 0;
+        for(int i = 0; i < nums.length - 1; ++i) {
+            total = Math.max(i + nums[i], total);
+            if (i + 1 > total) {
+                return false;
+            }
+
+            if (total >= nums.length - 1) {
+                return true;
+            }
+        }
+        return false;
+
+    }
 }
