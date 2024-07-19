@@ -6,7 +6,6 @@ public class Solution {
 
         return backTrack(nums, 0);
     }
-
     public boolean backTrack(int[] nums, int index) {
 
         if (index >= nums.length) {
