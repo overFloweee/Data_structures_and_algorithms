@@ -106,5 +106,42 @@ class Solution {
         return newArr.toArray(new int[newArr.size()][]);
 
     }
+
+    // 二刷 - 新思路
+    public int[][] merge3(int[][] intervals) {
+        int n = intervals.length;
+        if (n == 1) {
+            return intervals;
+        }
+
+        Arrays.sort(intervals, (a, b) -> {
+            return a[0] - b[0];
+        });
+
+        List<int[]> list = new ArrayList<>();
+        int l = 0;
+        int max = intervals[0][1];
+        for (int i = 1; i < n; ++i) {
+            if (max >= intervals[i][0]) {
+                max = Math.max(max, intervals[i][1]);
+            }
+            else {
+                list.add(new int[]{intervals[l][0], max});
+                l = i;
+                max = intervals[i][1];
+            }
+
+            if (i == n - 1) {
+                list.add(new int[]{intervals[l][0], max});
+            }
+        }
+
+        int[][] res = new int[list.size()][2];
+        int index = 0;
+        for (int[] i : list) {
+            res[index++] = i;
+        }
+        return res;
+    }
 }
 // leetcode submit region end(Prohibit modification and deletion)
