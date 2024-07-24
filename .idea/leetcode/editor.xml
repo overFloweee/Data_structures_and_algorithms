@@ -751,6 +751,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/[3098]求出所有子序列的能量和.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/doc/content/[3098]求出所有子序列的能量和.md" />
+              <option name="frontendQuestionId" value="leetcode.cn3098" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/[3098]求出所有子序列的能量和.java" />
+              <option name="titleSlug" value="find-the-sum-of-subsequence-powers" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/[322]零钱兑换.java">
           <value>
             <LeetcodeEditor>
@@ -1232,6 +1243,17 @@
               <option name="host" value="leetcode.cn" />
               <option name="path" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/[724]寻找数组的中心下标.java" />
               <option name="titleSlug" value="find-pivot-index" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/[738]单调递增的数字.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/doc/content/[738]单调递增的数字.md" />
+              <option name="frontendQuestionId" value="leetcode.cn738" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/[738]单调递增的数字.java" />
+              <option name="titleSlug" value="monotone-increasing-digits" />
             </LeetcodeEditor>
           </value>
         </entry>

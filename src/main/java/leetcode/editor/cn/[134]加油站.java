@@ -72,5 +72,30 @@ class Solution {
 
         return -1;
     }
+
+
+    public int canCompleteCircuit(int[] gas, int[] cost) {
+        int n = gas.length;
+
+        int curSum = 0;
+        int totalSum = 0;
+
+        int index = 0;
+        for(int i = 0; i < n; ++i) {
+            int temp = gas[i] - cost[i];
+            curSum += temp;
+            totalSum += temp;
+            if (curSum < 0) {
+                index = i + 1;
+                curSum = 0;
+            }
+        }
+
+        if (totalSum < 0) {
+            return -1;
+        }
+
+        return index;
+    }
 }
 // leetcode submit region end(Prohibit modification and deletion)
