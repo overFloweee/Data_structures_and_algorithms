@@ -37,6 +37,7 @@ import java.util.Comparator;
 
 // leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
+    // 初解 - 没解出来
     public int[][] merge1(int[][] intervals) {
         int n = intervals.length;
         if (n == 1) {
@@ -72,11 +73,6 @@ class Solution {
         }
 
 
-        for (int[] interval : intervals) {
-            System.out.print(Arrays.toString(interval) + " ");
-        }
-        System.out.println("size: " + size);
-
         int[][] res = new int[n - size][];
 
         System.arraycopy(intervals, size, res, 0, n - size);
@@ -111,10 +107,10 @@ class Solution {
             // merge集合中当前元素
             int[] cur = merge.get(merge.size() - 1);
             // 集合中尾元素  <  下一个元素的首元素
-            if (cur[1] <l){
+            if (cur[1] < l) {
                 merge.add(new int[]{l, r});
             }
-            else{  // 需要合并的情况
+            else {  // 需要合并的情况
                 cur[1] = Integer.max(cur[1], r);
             }
 
@@ -122,6 +118,44 @@ class Solution {
 
 
         return merge.toArray(new int[merge.size()][]);
+    }
+
+
+    // 二刷 - 新思路
+    public int[][] merge(int[][] intervals) {
+        int n = intervals.length;
+        if (n == 1) {
+            return intervals;
+        }
+
+        Arrays.sort(intervals, (a, b) -> {
+            return a[0] - b[0];
+        });
+
+        List<int[]> list = new ArrayList<>();
+        int l = 0;
+        int max = intervals[0][1];
+        for (int i = 1; i < n; ++i) {
+            if (max >= intervals[i][0]) {
+                max = Math.max(max, intervals[i][1]);
+            }
+            else {
+                list.add(new int[]{intervals[l][0], max});
+                l = i;
+                max = intervals[i][1];
+            }
+
+            if (i == n - 1) {
+                list.add(new int[]{intervals[l][0], max});
+            }
+        }
+
+        int[][] res = new int[list.size()][2];
+        int index = 0;
+        for (int[] i : list) {
+            res[index++] = i;
+        }
+        return res;
     }
 
 }
