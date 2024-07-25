@@ -38,7 +38,7 @@ class Solution {
 
 
     // 官解
-    public int candy(int[] ratings) {
+    public int candy2(int[] ratings) {
         // [1,2,2,5,4,3,2]
 
         int n = ratings.length;
@@ -73,4 +73,38 @@ class Solution {
 
         return sum;
     }
+
+
+    // 二刷 - 在第二个for循环理解上还差点
+    // 第一遍for，保证的是递增方向的元素，能够更大；但是不能保证递减方向的值比右边大
+    // 第二遍for循环，从后往前，要保证在递增的方向，值能够更大，那就需要取Math.max
+    // 去比较原值，和该次遍历+1后的值
+    public int candy(int[] ratings) {
+        int n = ratings.length;
+
+        int[] arr = new int[n];
+        arr[0] = 1;
+        for (int i = 1; i < n; i++) {
+            if (ratings[i] > ratings[i - 1]) {
+                arr[i] = arr[i - 1] + 1;
+            }
+            else {
+                arr[i] = 1;
+            }
+        }
+
+        for (int i = n - 2; i >= 0; i--) {
+            if (ratings[i] > ratings[i + 1]) {
+                arr[i] = Math.max(arr[i + 1] + 1, arr[i]);
+            }
+        }
+
+        int sum = 0;
+        for (int i : arr) {
+            sum += i;
+        }
+
+        return sum;
+    }
+
 }
