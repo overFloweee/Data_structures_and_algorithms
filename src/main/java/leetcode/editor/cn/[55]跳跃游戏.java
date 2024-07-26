@@ -6,6 +6,7 @@ public class Solution {
 
         return backTrack(nums, 0);
     }
+
     public boolean backTrack(int[] nums, int index) {
 
         if (index >= nums.length) {
@@ -51,7 +52,7 @@ public class Solution {
     }
 
     // 优解
-    public boolean canJump(int[] nums) {
+    public boolean canJump3(int[] nums) {
 
         int jump = 0;
         for (int i = 0; i <= jump; ++i) {
@@ -67,13 +68,13 @@ public class Solution {
 
 
     // 二刷下，提示了才解出来的
-    public boolean canJump(int[] nums) {
+    public boolean canJump4(int[] nums) {
         if (nums.length == 1) {
             return true;
         }
 
         int total = 0;
-        for(int i = 0; i < nums.length - 1; ++i) {
+        for (int i = 0; i < nums.length - 1; ++i) {
             total = Math.max(i + nums[i], total);
             if (i + 1 > total) {
                 return false;
@@ -86,4 +87,20 @@ public class Solution {
         return false;
 
     }
+
+
+    // 三刷
+    public boolean canJump(int[] nums) {
+
+        int max = 0;
+        for (int i = 0; i <= max; i++) {
+            max = Math.max(max, i + nums[i]);
+            if (max + 1 >= nums.length) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+
 }
