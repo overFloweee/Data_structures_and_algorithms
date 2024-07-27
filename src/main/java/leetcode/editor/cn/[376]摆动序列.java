@@ -72,5 +72,24 @@ class Solution {
 
         return sum;
     }
+
+
+    // 二解
+    public int wiggleMaxLength1(int[] nums) {
+        int n = nums.length;
+
+        int lastDiff = 0;
+        int curDiff = 0;
+        int sum = 1;
+        for (int i = 1; i < n; ++i) {
+            curDiff = nums[i] - nums[i - 1];
+            if (curDiff < 0 && lastDiff >= 0 || curDiff > 0 && lastDiff <= 0) {
+                sum++;
+                lastDiff = curDiff;
+            }
+        }
+
+        return sum;
+    }
 }
 // leetcode submit region end(Prohibit modification and deletion)
