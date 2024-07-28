@@ -56,11 +56,9 @@
 // leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int wiggleMaxLength(int[] nums) {
-
         int sum = 1;
         int preDiff = 0;
         int curDiff = 0;
-
         for (int i = 1; i < nums.length; i++) {
             curDiff = nums[i] - nums[i - 1];
 
