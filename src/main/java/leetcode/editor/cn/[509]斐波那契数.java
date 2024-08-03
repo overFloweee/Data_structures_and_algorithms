@@ -45,26 +45,60 @@
 
 
 // leetcode submit region begin(Prohibit modification and deletion)
-class Solution
-{
-    public int fib(int n)
-    {
-        if (n == 0)
-        {
+class Solution {
+    public int fib1(int n) {
+        if (n == 0) {
             return 0;
         }
 
         int p1 = 0;
         int p2 = 0;
         int r = 1;
-        for (int i = 0; i < n - 1; i++)
-        {
+        for (int i = 0; i < n - 1; i++) {
             p1 = p2;
             p2 = r;
             r = p1 + p2;
         }
 
         return r;
+    }
+
+    // 二刷
+    public int fib(int n) {
+        if (n == 0) {
+            return 0;
+        }
+
+        int last = 0;
+        int cur = 1;
+        int next = 1;
+
+        for (int i = 1; i < n; ++i) {
+            next = last + cur;
+            last = cur;
+            cur = next;
+        }
+
+        return cur;
+
+    }
+
+    // 动态规划
+    public int fib(int n) {
+        if (n == 0 || n == 1) {
+            return n;
+        }
+
+        int[] arr = new int[n + 1];
+        arr[0] = 0;
+        arr[1] = 1;
+
+
+        for (int i = 2; i <= n; ++i) {
+            arr[i] = arr[i-1] + arr[i-2];
+        }
+
+        return arr[n];
     }
 }
 // leetcode submit region end(Prohibit modification and deletion)
