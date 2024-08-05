@@ -8,9 +8,10 @@
       <change beforePath="$PROJECT_DIR$/.idea/leetcode/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/leetcode/editor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/leetcode/statistics.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/leetcode/statistics.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/[509]斐波那契数.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/[509]斐波那契数.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/[62]不同路径.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/[62]不同路径.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/[70]爬楼梯.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/[70]爬楼梯.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Solution1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Solution1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/exam/ali_shuziguoji_2024_4_8/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/exam/ali_shuziguoji_2024_4_8/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +89,7 @@
       <recent name="study" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.Solution1">
+  <component name="RunManager" selected="应用程序.main">
     <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="study.Solution" />
       <module name="Data_structures_and_algorithms" />
@@ -116,13 +117,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="demo" />
-      <module name="Data_structures_and_algorithms" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="demo.Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="demo.Solution" />
       <module name="Data_structures_and_algorithms" />
@@ -136,13 +130,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main" />
+      <module name="Data_structures_and_algorithms" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.main" />
         <item itemvalue="应用程序.Solution1" />
         <item itemvalue="应用程序.demo.Solution" />
         <item itemvalue="应用程序.Solution2" />
         <item itemvalue="应用程序.Solution" />
-        <item itemvalue="应用程序.demo" />
       </list>
     </recent_temporary>
   </component>
@@ -373,15 +374,8 @@
       <workItem from="1722227790235" duration="2000" />
       <workItem from="1722348918408" duration="539000" />
       <workItem from="1722523321960" duration="2278000" />
-      <workItem from="1722657934449" duration="4792000" />
-    </task>
-    <task id="LOCAL-00148" summary="刷题">
-      <option name="closed" value="true" />
-      <created>1720537882201</created>
-      <option name="number" value="00148" />
-      <option name="presentableId" value="LOCAL-00148" />
-      <option name="project" value="LOCAL" />
-      <updated>1720537882202</updated>
+      <workItem from="1722657934449" duration="4813000" />
+      <workItem from="1722862954998" duration="3896000" />
     </task>
     <task id="LOCAL-00149" summary="刷题">
       <option name="closed" value="true" />
@@ -767,7 +761,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722525501878</updated>
     </task>
-    <option name="localTasksCounter" value="197" />
+    <task id="LOCAL-00197" summary="刷题">
+      <option name="closed" value="true" />
+      <created>1722697651331</created>
+      <option name="number" value="00197" />
+      <option name="presentableId" value="LOCAL-00197" />
+      <option name="project" value="LOCAL" />
+      <updated>1722697651332</updated>
+    </task>
+    <option name="localTasksCounter" value="198" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -989,6 +991,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/Solution1.java</url>
           <line>13</line>
           <option name="timeStamp" value="86" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/main.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="87" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
