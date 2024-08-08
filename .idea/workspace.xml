@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e1fe7745-aaf7-47e2-955b-8388cc84bcec" name="更改" comment="刷题">
-      <change beforePath="$PROJECT_DIR$/.idea/leetcode/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/leetcode/editor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/leetcode/statistics.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/leetcode/statistics.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Solution1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Solution1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/exam/ali_shuziguoji_2024_4_8/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/exam/ali_shuziguoji_2024_4_8/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -375,15 +371,8 @@
       <workItem from="1722348918408" duration="539000" />
       <workItem from="1722523321960" duration="2278000" />
       <workItem from="1722657934449" duration="4813000" />
-      <workItem from="1722862954998" duration="3896000" />
-    </task>
-    <task id="LOCAL-00149" summary="刷题">
-      <option name="closed" value="true" />
-      <created>1720537903235</created>
-      <option name="number" value="00149" />
-      <option name="presentableId" value="LOCAL-00149" />
-      <option name="project" value="LOCAL" />
-      <updated>1720537903236</updated>
+      <workItem from="1722862954998" duration="4068000" />
+      <workItem from="1723125231595" duration="1759000" />
     </task>
     <task id="LOCAL-00150" summary="刷题">
       <option name="closed" value="true" />
@@ -769,7 +758,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722697651332</updated>
     </task>
-    <option name="localTasksCounter" value="198" />
+    <task id="LOCAL-00198" summary="刷题">
+      <option name="closed" value="true" />
+      <created>1722869502933</created>
+      <option name="number" value="00198" />
+      <option name="presentableId" value="LOCAL-00198" />
+      <option name="project" value="LOCAL" />
+      <updated>1722869502934</updated>
+    </task>
+    <option name="localTasksCounter" value="199" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -994,8 +991,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/main.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="87" />
+          <line>52</line>
+          <option name="timeStamp" value="89" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/main.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="90" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
