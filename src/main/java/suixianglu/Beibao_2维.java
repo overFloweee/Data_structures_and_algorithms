@@ -1,7 +1,9 @@
+package suixianglu;
+
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class main {
+public class Beibao_2维 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int M = sc.nextInt();
