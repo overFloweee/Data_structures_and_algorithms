@@ -15,7 +15,6 @@ class Solution {
             }
         }
         dp[0][0] = 0;
-
         for (int i = 1; i < n; ++i) {
             for (int j = 0; j <= target; ++j) {
                 if (stones[i] <= j) {
