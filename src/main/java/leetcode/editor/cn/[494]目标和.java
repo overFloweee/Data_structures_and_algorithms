@@ -9,7 +9,6 @@ class Solution {
         backTracking(nums, target, 0, 0);
         return res;
     }
-
     public void backTracking(int[] nums, int target, int sum, int index) {
         if (sum == target && index == nums.length) {
             res++;
