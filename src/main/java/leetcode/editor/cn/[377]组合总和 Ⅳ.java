@@ -1,55 +1,59 @@
-//给你一个由 不同 整数组成的数组 nums ，和一个目标整数 target 。请你从 nums 中找出并返回总和为 target 的元素组合的个数。 
-//
-// 题目数据保证答案符合 32 位整数范围。 
-//
-// 
-//
-// 示例 1： 
-//
-// 
-//输入：nums = [1,2,3], target = 4
-//输出：7
-//解释：
-//所有可能的组合为：
-//(1, 1, 1, 1)
-//(1, 1, 2)
-//(1, 2, 1)
-//(1, 3)
-//(2, 1, 1)
-//(2, 2)
-//(3, 1)
-//请注意，顺序不同的序列被视作不同的组合。
-// 
-//
-// 示例 2： 
-//
-// 
-//输入：nums = [9], target = 3
-//输出：0
-// 
-//
-// 
-//
-// 提示： 
-//
-// 
-// 1 <= nums.length <= 200 
-// 1 <= nums[i] <= 1000 
-// nums 中的所有元素 互不相同 
-// 1 <= target <= 1000 
-// 
-//
-// 
-//
-// 进阶：如果给定的数组中含有负数会发生什么？问题会产生何种变化？如果允许负数出现，需要向题目中添加哪些限制条件？ 
-//
-// Related Topics 数组 动态规划 👍 1018 👎 0
-
-
-//leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
+    // 初解 做成了组合数了，没有关心顺序
+    // 所以没解出来
     public int combinationSum4(int[] nums, int target) {
+        // 完全背包，物品可以用多次
+        // 求排列数，关心顺序
+        int n = nums.length;
+        int[][] dp = new int[n][target + 1];
 
+        for (int i = 0; i < n; ++i) {
+            dp[i][0] = 1;
+        }
+
+        for (int j = 0; j <= target; ++j) {
+            if (j >= nums[0]) {
+                dp[0][j] += dp[0][j - nums[0]];
+            }
+        }
+        for (int j = 0; j <= target; ++j) {
+            for (int i = 1; i < n; ++i) {
+                if (j >= nums[i]) {
+                    dp[i][j] = dp[i - 1][j] + dp[i][j - nums[i]];
+                }
+                else {
+                    dp[i][j] = dp[i - 1][j];
+                }
+            }
+        }
+
+        for (int[] ints : dp) {
+            System.out.println(Arrays.toString(ints));
+        }
+        return dp[n - 1][target];
+    }
+
+    public int combinationSum42(int[] nums, int target) {
+        int n = nums.length;
+        int[] dp = new int[target + 1];
+        // 别忘记初始化
+        dp[0] = 1;
+        for (int j = 0; j <= target; ++j) {
+            for (int i = 0; i < n; ++i) {
+                if (j >= nums[i]) {
+                    // 因为物品可以无限使用，所以每遍历 coins[i] 次为一轮
+                    dp[j] += +dp[j - nums[i]];
+                }
+            }
+        }
+        // for (int i = 0; i <= target; i++) {
+        //     for (int j = 0; j < n; j++) {
+        //         if (i >= nums[j]) {
+        //             dp[i] += dp[i - nums[j]];
+        //         }
+        //     }
+        // }
+
+        return dp[target];
     }
 }
-//leetcode submit region end(Prohibit modification and deletion)
