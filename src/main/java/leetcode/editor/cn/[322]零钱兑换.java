@@ -42,22 +42,17 @@
 import java.util.Arrays;
 
 // leetcode submit region begin(Prohibit modification and deletion)
-class Solution
-{
-    public int coinChange(int[] coins, int amount)
-    {
+class Solution {
+    public int coinChange(int[] coins, int amount) {
         int[] dp = new int[amount + 1];
 
         Arrays.fill(dp, amount + 1);
 
         dp[0] = 0;
-        for (int i = 1; i <= amount; i++)
-        {
-            for (int j = 0; j < coins.length; j++)
-            {
-                if (i >= coins[j])
-                {
-                    dp[i] = Integer.min(dp[i], dp[i - coins[j]] + 1);
+        for (int i = 0; i < coins.length; i++) {
+            for (int j = 1; j <= amount; j++) {
+                if (j >= coins[i]) {
+                    dp[j] = Integer.min(dp[j], dp[j - coins[i]] + 1);
                 }
             }
         }
