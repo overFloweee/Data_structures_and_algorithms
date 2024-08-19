@@ -31,15 +31,17 @@
 
 
 import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
+import java.util.stream.Collectors;
 
 // leetcode submit region begin(Prohibit modification and deletion)
 class Solution
 {
 
     // 初解 - 未Accepted
-    public int numSquares1(int n)
+    public int numSquares(int n)
     {
         int[] dp = new int[n + 1];
         dp[0] = 0;
@@ -47,6 +49,7 @@ class Solution
 
         HashSet<Integer> set = new HashSet<>();
         set.add(1);
+        new ArrayList<>().stream().collect(Collectors.toList())
 
         int late = 1;
         for (int i = 2; i <= n; i++)
@@ -93,9 +96,5 @@ class Solution
     }
 
 
-    public int numSquares(int n)
-    {
-
-    }
 }
 // leetcode submit region end(Prohibit modification and deletion)

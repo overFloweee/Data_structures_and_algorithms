@@ -1,29 +1,29 @@
 package demo;
 
-public class Solution {
-    public boolean canJump(int[] nums) {
-        return backTrack(nums, 0);
-    }
+import java.util.Arrays;
 
+class Solution {
     public static void main(String[] args) {
-        System.out.println(new Solution().canJump(new int[]{2, 0, 0}));
+        new Solution().numTrees(4);
     }
 
-    public boolean backTrack(int[] nums, int index) {
-        if (index + 1 >= nums.length) {
-            return true;
-        }
+    public int numTrees(int n) {
 
+        int[] dp = new int[n + 1];
+        dp[0] = 1;
+        dp[1] = 1;
 
-        for (int i = 1; i <= nums[index]; ++i) {
-            // index是当前的位置
-            // index + i是马上要跳跃到的位置
-            if (backTrack(nums, index + i)) {
-                return true;
+        // dp[n] = dp[n-i] + dp[i]
+        for (int i = 2; i <= n; ++i) {
+            for (int j = 0; j < n; ++j) {
+
+                dp[i] += dp[n - 1 - j] * dp[j];
+                System.out.println("i:" + i + " " + Arrays.toString(dp));
+
             }
         }
+        // System.out.println(Arrays.toString(dp));
+        return dp[n];
 
-        return false;
     }
 }
-
