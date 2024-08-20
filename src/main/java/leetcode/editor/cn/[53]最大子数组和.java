@@ -55,7 +55,6 @@ class Solution {
             if (count < 0) {
                 count = 0;
             }
-
         }
 
         return max;
