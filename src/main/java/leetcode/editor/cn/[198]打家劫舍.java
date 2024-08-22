@@ -37,19 +37,16 @@
 import java.util.Arrays;
 
 // leetcode submit region begin(Prohibit modification and deletion)
-class Solution
-{
+class Solution {
 
     // 初解 - 动态规划
-    public int rob1(int[] nums)
-    {
+    public int rob1(int[] nums) {
         int n = nums.length;
         int[][] dp = new int[n][2];
         dp[0][0] = 0;
         dp[0][1] = nums[0];
 
-        for (int i = 1; i < nums.length; i++)
-        {
+        for (int i = 1; i < nums.length; i++) {
             dp[i][0] = Math.max(dp[i - 1][1], dp[i - 1][0]);
             dp[i][1] = dp[i - 1][0] + nums[i];
         }
@@ -58,26 +55,20 @@ class Solution
     }
 
     // 官方解
-    public int rob(int[] nums)
-    {
+    public int rob(int[] nums) {
         int n = nums.length;
-        if (n == 0)
-        {
+        if (n == 0) {
             return 0;
         }
 
-        if (n == 1)
-        {
+        if (n == 1) {
             return nums[0];
         }
-
         int[] dp = new int[n];
-
         dp[0] = nums[0];
         dp[1] = Math.max(nums[0], nums[1]);
 
-        for (int i = 2; i < n; i++)
-        {
+        for (int i = 2; i < n; i++) {
             dp[i] = Math.max(dp[i - 2] + nums[i], dp[i - 1]);
         }
 
@@ -85,8 +76,7 @@ class Solution
     }
 
     // 二刷AC
-    public int rob3(int[] nums)
-    {
+    public int rob3(int[] nums) {
         int n = nums.length;
         if (n == 1) {
             return nums[0];
@@ -99,7 +89,7 @@ class Solution
 
 
         for (int i = 2; i < n; ++i) {
-            dp[i] = Math.max(dp[i-2] + nums[i], dp[i-1]);
+            dp[i] = Math.max(dp[i - 2] + nums[i], dp[i - 1]);
         }
 
         return dp[n - 1];
