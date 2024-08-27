@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1fe7745-aaf7-47e2-955b-8388cc84bcec" name="更改" comment="刷题" />
+    <list default="true" id="e1fe7745-aaf7-47e2-955b-8388cc84bcec" name="更改" comment="刷题">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -394,39 +396,10 @@
       <workItem from="1724073286551" duration="3603000" />
       <workItem from="1724159604032" duration="6000" />
       <workItem from="1724163824051" duration="36000" />
-      <workItem from="1724331296133" duration="4072000" />
-    </task>
-    <task id="LOCAL-00179" summary="刷题">
-      <option name="closed" value="true" />
-      <created>1721658890396</created>
-      <option name="number" value="00179" />
-      <option name="presentableId" value="LOCAL-00179" />
-      <option name="project" value="LOCAL" />
-      <updated>1721658890396</updated>
-    </task>
-    <task id="LOCAL-00180" summary="刷题">
-      <option name="closed" value="true" />
-      <created>1721658909242</created>
-      <option name="number" value="00180" />
-      <option name="presentableId" value="LOCAL-00180" />
-      <option name="project" value="LOCAL" />
-      <updated>1721658909242</updated>
-    </task>
-    <task id="LOCAL-00181" summary="刷题">
-      <option name="closed" value="true" />
-      <created>1721658934429</created>
-      <option name="number" value="00181" />
-      <option name="presentableId" value="LOCAL-00181" />
-      <option name="project" value="LOCAL" />
-      <updated>1721658934429</updated>
-    </task>
-    <task id="LOCAL-00182" summary="刷题">
-      <option name="closed" value="true" />
-      <created>1721742026120</created>
-      <option name="number" value="00182" />
-      <option name="presentableId" value="LOCAL-00182" />
-      <option name="project" value="LOCAL" />
-      <updated>1721742026121</updated>
+      <workItem from="1724331296133" duration="4237000" />
+      <workItem from="1724644519318" duration="203000" />
+      <workItem from="1724728615110" duration="931000" />
+      <workItem from="1724743708229" duration="1377000" />
     </task>
     <task id="LOCAL-00183" summary="刷题">
       <option name="closed" value="true" />
@@ -788,7 +761,39 @@
       <option name="project" value="LOCAL" />
       <updated>1724336816475</updated>
     </task>
-    <option name="localTasksCounter" value="228" />
+    <task id="LOCAL-00228" summary="刷题">
+      <option name="closed" value="true" />
+      <created>1724336899330</created>
+      <option name="number" value="00228" />
+      <option name="presentableId" value="LOCAL-00228" />
+      <option name="project" value="LOCAL" />
+      <updated>1724336899330</updated>
+    </task>
+    <task id="LOCAL-00229" summary="刷题">
+      <option name="closed" value="true" />
+      <created>1724336918169</created>
+      <option name="number" value="00229" />
+      <option name="presentableId" value="LOCAL-00229" />
+      <option name="project" value="LOCAL" />
+      <updated>1724336918169</updated>
+    </task>
+    <task id="LOCAL-00230" summary="刷题">
+      <option name="closed" value="true" />
+      <created>1724336962095</created>
+      <option name="number" value="00230" />
+      <option name="presentableId" value="LOCAL-00230" />
+      <option name="project" value="LOCAL" />
+      <updated>1724336962095</updated>
+    </task>
+    <task id="LOCAL-00231" summary="刷题">
+      <option name="closed" value="true" />
+      <created>1724336976924</created>
+      <option name="number" value="00231" />
+      <option name="presentableId" value="LOCAL-00231" />
+      <option name="project" value="LOCAL" />
+      <updated>1724336976924</updated>
+    </task>
+    <option name="localTasksCounter" value="232" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
