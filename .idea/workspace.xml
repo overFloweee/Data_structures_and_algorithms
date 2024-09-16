@@ -5,8 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e1fe7745-aaf7-47e2-955b-8388cc84bcec" name="更改" comment="刷题">
+      <change afterPath="$PROJECT_DIR$/src/main/exam/exam/Main1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/exam/exam/Main2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/exam/exam1/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/exam/exam1/Main1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/exam/exam1/Main2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/exam/exam1/Main3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/exam/exam2/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/exam/exam2/Main1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/exam/exam2/Main2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/exam/exam3/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/exam/exam3/Main1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/exam/exam3/Main2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/exam/exam3/demo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/exam/exam4/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/exam/exam4/Main2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Q1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/demo/PrimMST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sort/Sort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/leetcode/statistics.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/leetcode/statistics.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/exam/exam/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/[279]完全平方数.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/[279]完全平方数.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/demo/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/demo/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/exam/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/exam/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,22 +110,16 @@
       <recent name="study" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.demo.Solution">
+  <component name="RunManager" selected="应用程序.Main (1)">
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Data_structures_and_algorithms" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="suixianglu.Main" />
-      <module name="Data_structures_and_algorithms" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="suixianglu.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="demo.Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="demo.Solution" />
+      <option name="MAIN_CLASS_NAME" value="demo.Main" />
       <module name="Data_structures_and_algorithms" />
       <extension name="coverage">
         <pattern>
@@ -112,19 +131,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="main" />
-      <module name="Data_structures_and_algorithms" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="demo.test" />
+    <configuration name="demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exam3.demo" />
       <module name="Data_structures_and_algorithms" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="demo.*" />
+          <option name="PATTERN" value="exam3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -132,12 +144,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="demo.test1" />
+    <configuration name="exam4.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exam4.Main" />
       <module name="Data_structures_and_algorithms" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="demo.*" />
+          <option name="PATTERN" value="exam4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -145,13 +157,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="exam4.Main2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exam4.Main2" />
+      <module name="Data_structures_and_algorithms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="exam4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="应用程序.Main (1)" />
+      <item itemvalue="应用程序.demo" />
+      <item itemvalue="应用程序.exam4.Main" />
+      <item itemvalue="应用程序.exam4.Main2" />
+      <item itemvalue="应用程序.Main" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.demo.Solution" />
+        <item itemvalue="应用程序.Main (1)" />
+        <item itemvalue="应用程序.exam4.Main2" />
+        <item itemvalue="应用程序.exam4.Main" />
         <item itemvalue="应用程序.Main" />
-        <item itemvalue="应用程序.test1" />
-        <item itemvalue="应用程序.test" />
-        <item itemvalue="应用程序.main" />
+        <item itemvalue="应用程序.demo" />
       </list>
     </recent_temporary>
   </component>
@@ -403,6 +435,21 @@
       <workItem from="1724743708229" duration="1440000" />
       <workItem from="1724840190422" duration="26000" />
       <workItem from="1725360992968" duration="2463000" />
+      <workItem from="1725418230579" duration="6992000" />
+      <workItem from="1725504481255" duration="11000" />
+      <workItem from="1725533685538" duration="6206000" />
+      <workItem from="1725618555376" duration="8808000" />
+      <workItem from="1725700432459" duration="1702000" />
+      <workItem from="1725766208081" duration="8636000" />
+      <workItem from="1725851292298" duration="2264000" />
+      <workItem from="1725871364735" duration="1945000" />
+      <workItem from="1726133005679" duration="129000" />
+      <workItem from="1726139364368" duration="5432000" />
+      <workItem from="1726196622013" duration="5366000" />
+      <workItem from="1726276969198" duration="17392000" />
+      <workItem from="1726372389107" duration="699000" />
+      <workItem from="1726378565444" duration="2718000" />
+      <workItem from="1726453697133" duration="2994000" />
     </task>
     <task id="LOCAL-00184" summary="刷题">
       <option name="closed" value="true" />
@@ -1024,6 +1071,16 @@
           <url>file://$PROJECT_DIR$/src/main/java/demo/Solution.java</url>
           <line>19</line>
           <option name="timeStamp" value="92" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/sort/Sort.java</url>
+          <line>116</line>
+          <option name="timeStamp" value="97" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/exam/exam4/Main.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="98" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
