@@ -37,39 +37,33 @@ import java.util.HashSet;
 import java.util.stream.Collectors;
 
 // leetcode submit region begin(Prohibit modification and deletion)
-class Solution
-{
+class Solution {
 
     // 初解 - 未Accepted
-    public int numSquares(int n)
-    {
+    public int numSquares1(int n) {
         int[] dp = new int[n + 1];
         dp[0] = 0;
         dp[1] = 1;
 
         HashSet<Integer> set = new HashSet<>();
         set.add(1);
-        new ArrayList<>().stream().collect(Collectors.toList())
+        new ArrayList<>().stream().collect(Collectors.toList());
 
         int late = 1;
-        for (int i = 2; i <= n; i++)
-        {
+        for (int i = 2; i <= n; i++) {
 
             int temp = i - late;
 
-            if (isSquare(i))
-            {
+            if (isSquare(i)) {
                 dp[i] = 1;
                 set.add(i);
 
             }
-            else if (set.contains(temp))
-            {
+            else if (set.contains(temp)) {
                 dp[i] = 1 + dp[temp];
 
             }
-            else
-            {
+            else {
                 dp[i] = 1 + temp;
             }
         }
@@ -80,19 +74,34 @@ class Solution
 
     }
 
-    public static boolean isSquare(int num)
-    {
+    public static boolean isSquare(int num) {
         double a = 0;
-        try
-        {
+        try {
             a = Math.sqrt(num);
         }
-        catch (Exception e)
-        {
+        catch (Exception e) {
             return false;
         }
         int b = (int) a;
         return a - b == 0;
+    }
+
+    public int numSquares(int n) {
+        int[] dp = new int[n + 1];
+
+        for (int i = 0; i <= n; ++i) {
+            dp[i] = i;
+        }
+
+        for (int i = 1; i * i <= n; ++i) {
+            for (int j = 0; j <= n; ++j) {
+                if (j >= i * i) {
+                    dp[j] = Math.min(dp[j], dp[j - i * i] + 1);
+                }
+            }
+        }
+
+        return dp[n];
     }
 
 
