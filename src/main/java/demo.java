@@ -1,4 +1,6 @@
-import java.util.*;
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
 
 public class demo {
     public static void main(String[] args) {
@@ -9,9 +11,16 @@ public class demo {
         // System.out.println(sb.lastIndexOf("."));
         // System.out.println(sb.delete(5, sb.length()));
         // System.out.println();
-        boolean a = false;
-
-        System.out.println();
+        // PriorityQueue<Integer> queue = new PriorityQueue<>();
+        //
+        // queue.offer(2);
+        // queue.offer(1);
+        // queue.offer(5);
+        // queue.poll();
+        // System.out.println(queue);
+        Integer a1 = 100;
+        Integer a2 = 100;
+        System.out.println(a1 == a2);
     }
 
     public static int strStr(String haystack, String needle) {
